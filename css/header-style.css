@@ -3,10 +3,19 @@
 }
 
 .navbar-brand {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .nav-item{
     margin-top:10px;
+    font-size: 1.3em;
+}
+
+.nav-item.nav-left {
+    margin-right: 15px;
+}
+
+.nav-item.nav-right {
+    margin-left: 15px;
 }

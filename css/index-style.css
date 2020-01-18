@@ -1,0 +1,25 @@
+img.image-carousel {
+
+}
+
+h5.carousel-text {
+    font-family:"Poppins", sans-serif;
+    font-size:3em;
+    text-shadow: 2px 2px black;
+}
+
+p.carousel-text {
+    font-size:3em;
+    text-shadow: 1px 1px 1px black;
+}
+
+.image-text {
+    bottom:54%;
+    right: 15%;
+    color: #F5F3F5;
+}
+
+
+
+
+

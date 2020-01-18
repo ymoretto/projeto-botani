@@ -10,17 +10,20 @@
   <link rel="shortcut icon" href="#" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/geral-style.css">
   <link rel="stylesheet" href="css/header-style.css">
+  <link rel="stylesheet" href="css/index-style.css">
 
 
   <title>Botani</title>
 </head>
+<body>
 
+<!-- Menu de Navegação -->
 <header class="container">
-  <nav class="navbar navbar-expand-lg navbar-light row d-flex justify-content-center">
+  <nav class="transparent navbar  navbar-expand-lg navbar-light row d-flex justify-content-center">
 
-      <div class="" id="navbarNav">
+      <div class="nav-left" id="navbarNav">
           <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item ">
                   <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
@@ -35,13 +38,13 @@
         </a>
       </div>
 
-      <div class="" id="navbarNav">
+      <div class="nav-left" id="navbarNav">
           <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link" href="#login">Login</a>
+                  <a class="nav-link nav-right" href="#login">Login</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#contato">Contato</a>
+                  <a class="nav-link nav-right" href="#contato">Contato</a>
               </li>
           </ul>
       </div>
@@ -49,9 +52,26 @@
   </nav>
   </header>
 
+<!-- Index -->
 
+<section id="bannerHome">
 
-<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/jardim.png" alt="First slide">
+                <div class="carousel-caption image-text col-lg-8 text-center d-none d-md-block">
+                    <h5 class="carousel-text">Grow your plants.</h5>
+                    <h5 class="carousel-text">Grow your community.</h5>
+                    <!-- <p class="carousel-text">Grow your community.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Fim do Index -->
 
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
