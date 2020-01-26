@@ -4,3 +4,20 @@ p {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
 }
+
+h2.titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #1F3B2C;
+}
+
+.formulario {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+button.form-contato {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}

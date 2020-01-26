@@ -73,6 +73,55 @@
 
 <!-- Fim do Index -->
 
+<!-- Início Section de Sobre -->
+
+<section id="sobre">
+    <div class="container bloco-sobre">
+        <div class="row">
+            <div class="col align-middle texto-sobre">
+                <h2 class="titulo"> Conheça o Projeto Botani </h2>
+                <p>O Projeto Botani nasceu por causa do projeto integrador, desenvolvido no curso de Full Stack da Digital House Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt, eos dolorem delectus sed est vitae quam nisi laborum esse quod dolor impedit ipsam! Expedita adipisci voluptates alias veritatis similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum quos ut, laborum distinctio saepe nulla officiis accusantium a fuga consectetur reiciendis porro molestias autem doloremque animi ipsa culpa dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="col">
+                <img src="images/growing-plant.gif" style="width:500px" alt="gif-planta">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fim da Sections de Sobre -->
+
+<!-- Começo da Sections de Contato -->
+
+<section id="contato">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="titulo">Entre em contato</h2>
+                <form class="formulario">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary form-contato">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fim da Sections de Contato --> 
+
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
