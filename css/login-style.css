@@ -1,0 +1,36 @@
+.left-side, .right-side {
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.left-side {
+    background-image: url('../images/jardim.png');
+}
+
+.right-side {
+    background-image: url('../images/jardim2.png');
+}
+
+h2.tituloLogin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.formularioLogin{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    padding-top: 150px;
+}
+
+.btnLogin{
+    background-color: #588068;
+    border-color: #1F3B2C;
+}
+
+.btnLogin:hover {
+    background-color: #1F3B2C;
+    border-color: #1F3B2C;
+}
