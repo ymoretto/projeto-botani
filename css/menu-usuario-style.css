@@ -1,0 +1,17 @@
+.logo-header {
+    max-width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-text {
+    margin-top:10px;
+}
+
+.nav-item {
+    margin: 0 30px 0 30px;
+}
+
+.navbar {
+    background-color: #F5F3F5;
+}

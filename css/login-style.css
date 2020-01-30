@@ -5,18 +5,32 @@
     background-position: right;
 }
 
+.login-image {
+    background-color: green;
+    background-image: url("../images/vasos.png");
+    background-size: cover;
+    background-repeat:none;
+    background-position:center;
+    /* filter: blur(2px); */
+}
+
 .left-side {
-    background-image: url('../images/jardim.png');
+
 }
 
 .right-side {
-    background-image: url('../images/jardim2.png');
+
+}
+
+.card-style {
+    background-color:white;
+    border-color:3px solid purple;
 }
 
 h2.tituloLogin {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color:#588068;
 }
 
 .formularioLogin{
@@ -27,7 +41,7 @@ h2.tituloLogin {
 
 .btnLogin{
     background-color: #588068;
-    border-color: #1F3B2C;
+    border-color:#588068;
 }
 
 .btnLogin:hover {

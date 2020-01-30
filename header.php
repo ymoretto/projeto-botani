@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/geral-style.css">
   <link rel="stylesheet" href="css/header-style.css">
   <link rel="stylesheet" href="css/index-style.css">
+  <link rel="stylesheet" href="css/login-style.css">
 
 
   <title>Botani</title>
@@ -29,7 +30,7 @@
                   <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#sobre">Sobre Nós</a>
+                  <a class="nav-link" href="index.php#sobre">Sobre Nós</a>
               </li>
           </ul>
       </div>
@@ -46,7 +47,7 @@
                   <a class="nav-link nav-right" href="login.php">Login</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link nav-right" href="#contato">Contato</a>
+                  <a class="nav-link nav-right" href="index.php#contato">Contato</a>
               </li>
           </ul>
       </div>

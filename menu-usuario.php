@@ -1,7 +1,5 @@
 <?php require_once("functions.php") ?>
 
-<?php require_once("functions.php") ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,49 +9,43 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Fim do Boostrap -->
-
   <link rel="shortcut icon" href="#" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/geral-style.css">
-
+  <link rel="stylesheet" href="css/menu-usuario-style.css">
 
   <title>Botani</title>
 </head>
 <body>
 
-<!-- Menu de Navegação -->
-<header class="container">
-  <nav class="transparent navbar  navbar-expand-lg navbar-light row d-flex justify-content-center">
+<!-- [Menu de Navegação] -->
 
-      <div class="nav-left" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item ">
-                  <a class="nav-link" href="index.php">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#sobre">Sobre Nós</a>
-              </li>
-          </ul>
-      </div>
 
-      <div class="navbar-logo">
+<header>
+
+    <nav class="transparent navbar  navbar-expand-lg navbar-light row d-flex justify-content-center">
         <a class="navbar-brand" href="index.php">
             <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header">
         </a>
-      </div>
+  
+        <div class="collapse navbar-collapse nav-text" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="perfil-usuario.php">Usuário</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil-planta.php">Plantas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notificações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Amigos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feed.php">Main</a>
+              </li>
+            </ul>
+        </div>
 
-      <div class="nav-left" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link nav-right" href="login.php">Login</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link nav-right" href="#contato">Contato</a>
-              </li>
-          </ul>
-      </div>
-      
-  </nav>
+    </nav>
   </header>
-
-
-<?php require_once("footer.php") ?>
