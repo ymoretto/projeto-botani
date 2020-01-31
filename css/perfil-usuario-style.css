@@ -1,0 +1,52 @@
+.top-block {
+    background-color: lightgreen;
+    padding: 2vh 0 2vh 0;
+}
+
+.basic-info {
+    padding-left:10vw;
+}
+
+img.foto-perfil {
+    border: 5px solid #1F3B2C;
+    border-radius: 50%;
+}
+
+.nome-usuario {
+    padding-top: 2vh;
+}
+
+.basic-info-text {
+    font-size: 1.2em;
+    padding-right: 2vh;
+}
+
+hr.titulo { 
+    display: block;
+    color: #1F3B2C;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 5px;
+    margin-right:2vh;
+    margin-top: 0em;
+}
+
+.h2-perfil {
+    padding-top:2vh;
+}
+
+hr.divisor {
+    border: 2px solid #1F3B2C;
+    max-width: 90vw;
+}
+
+.foto-planta {
+    width: 200px;
+    height: 200px;
+}
+
+.perfilzinho-planta {
+    max-width:200px;
+    max-height:200px;
+    object-fit: fill;
+}

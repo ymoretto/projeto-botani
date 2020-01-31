@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="#" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/geral-style.css">
   <link rel="stylesheet" href="css/menu-usuario-style.css">
+  <link rel="stylesheet" href="css/perfil-usuario-style.css">
 
   <title>Botani</title>
 </head>
