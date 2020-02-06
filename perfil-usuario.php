@@ -67,9 +67,7 @@
 
 <!-- Plantas FIM -->
 
-<!-- Amigos -->
-
-<!-- Plantas --> <!-- refazer depois com flexbox -->
+<!-- Amigos --> <!-- refazer depois com flexbox -->
 
 <hr class="divisor">
 

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/geral-style.css">
   <link rel="stylesheet" href="css/menu-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-usuario-style.css">
+  <link rel="stylesheet" href="css/perfil-planta-style.css">
 
   <title>Botani</title>
 </head>
