@@ -13,58 +13,19 @@
     max-height: 250px;
     border: 3px solid #1F3B2C;
     border-radius: 5%;
+    margin-right: 15px;
 }
 
-/* CSS GRID PARA LINHA DO TEMPO DA PLANTA */
-/* REFERÊNCIA 
-https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585 */
+/* FLEXBOX PARA LINHA DO TEMPO DA PLANTA */
 
-:root {
-    --gutter: 10px;
-}
-
-.gridHolder > * {
-    grid-column: 2 / -2;
-}
-
-.full {
-    grid-column: 1 / -1;
-}
-
-.hs {
-    display: grid;
-    grid-gap: calc(var(--gutter) / 2);
-    /* grid-template-columns: 10px; */
-    /* grid-template-rows: minmax(150px, 1fr); */
-    grid-auto-flow: column;
-    grid-auto-columns: calc(50% - var(--gutter) * 2);
-
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    padding-bottom: calc(.75 * var(--gutter));
-    margin-bottom: calc(-.25 * var(--gutter));
-}
-
-.hs:before, .hs:after {
-    content: '';
-    width: 10px;
-}
-
-.hs > .item {
-    scroll-snap-align: center;
-    /* padding: calc(var(--gutter) / 2 * 1.5); */
+.container > .timeline {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    overflow-x: auto;
 }
 
-.no-scrollbar {
-    scrollbar-width: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+/* SEM SCROLLBAR PRA MOBILE */
 
-.no-scrollbar::-webkit-scrollbar {
+/* .timeline::-webkit-scrollbar {
     display: none;
-}
+} */
+

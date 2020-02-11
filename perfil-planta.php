@@ -35,44 +35,22 @@
         <!-- Linha do tempo da planta -->
         <h3 class="my-4">Linha do Tempo da Planta</h3>
 
-        <div class="row hs full">
-
-          <div class="col-md-3 col-sm-6 mb-4 item">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
+        <div class="row">
+          <div class="container">
+            <div class="timeline">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+            </div>
           </div>
-
-          <div class="col-md-3 col-sm-6 mb-4 item">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4 item">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4 item">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4 item">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4 item">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
         </div>
         <!-- Fim da linha do tempo -->
 
@@ -112,31 +90,21 @@
         <h3 class="my-4">Linha do Tempo da Planta</h3>
 
         <div class="row">
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
+          <div class="container">
+            <div class="timeline">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+            </div>
           </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
         </div>
         <!-- Fim da linha do tempo -->
 
@@ -176,31 +144,21 @@
         <h3 class="my-4">Linha do Tempo da Planta</h3>
 
         <div class="row">
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
+          <div class="container">
+            <div class="timeline">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+              <img class="img-pq" src="images/jiboia.jpeg" alt="">
+            </div>
           </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-              <img class="img-fluid img-pq" src="images/jiboia.jpeg" alt="">
-            </a>
-          </div>
-
         </div>
         <!-- Fim da linha do tempo -->
 
