@@ -22,7 +22,39 @@
 
 <!-- Menu de Navegação -->
 <header class="container">
-  <nav class="transparent navbar  navbar-expand-lg navbar-light row d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+        <a class="navbar-brand" href="index.php">
+            <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link header-text" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link header-text" href="index.php#sobre">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-right header-text" href="index.php#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-right header-text loginBtn" href="login.php"><strong>Entrar</strong></a>   
+              </li>
+          </ul>
+      </div>
+      
+  </nav>
+  </header>
+
+<!-- Menu Hamburger para mobile
+
+  <header class="container">
+  <nav class="transparent navbar navbar-expand-lg navbar-light row d-flex justify-content-center">
 
       <div class="nav-left" id="navbarNav">
           <ul class="navbar-nav">
@@ -54,3 +86,6 @@
       
   </nav>
   </header>
+
+</header> -->
+
