@@ -4,6 +4,10 @@
     margin-left:20vw;
 }
 
+.header-text{
+    font-size: larger;
+}
+
 /* .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2.5rem;
     padding-left: 2.5rem;

@@ -34,16 +34,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="index.php">Home</a>
+                  <a class="nav-link header-text" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="index.php#sobre">Sobre Nós</a>
+                  <a class="nav-link header-text" href="index.php#sobre">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link nav-right" href="login.php">Login</a>
+                <a class="nav-link nav-right header-text" href="index.php#contato">Contato</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link nav-right" href="index.php#contato">Contato</a>
+                <a class="nav-link nav-right header-text loginBtn" href="login.php"><strong>Entrar</strong></a>   
               </li>
           </ul>
       </div>
