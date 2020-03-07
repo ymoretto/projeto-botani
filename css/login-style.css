@@ -22,10 +22,10 @@
     border-radius: 10px;
 }
 
-.card-style {
+/* .card-style {
     background-color:white;
     border-color:3px solid purple;
-}
+} */
 
 h2.tituloLogin {
     font-family: "Poppins", sans-serif;
@@ -46,4 +46,23 @@ h2.tituloLogin {
 .btnLogin:hover {
     background-color: #1F3B2C;
     border-color: #1F3B2C;
+}
+
+/* MOBILE */
+
+@media (max-width: 1200px){
+    .halfpage{
+        height: 70vh;
+    }
+
+    .formplaceholder{
+        height: 50%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .tituloLogin {
+        font-size: medium;
+    }
 }

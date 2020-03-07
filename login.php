@@ -5,7 +5,7 @@
     <div class="row no-gutters">
 
         <!-- Lado Esquerdo da Tela [Login] -->
-        <div class="col col-md-6">
+        <div class="col-xl">
             <div class="halfpage d-flex justify-content-center align-items-center">
                 <div class="formplaceholder">
                     <form method="get" class="formularioLogin">
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Lado Direito da Tela [Cadastro] -->
-        <div class="col col-md-6">
+        <div class="col-xl">
             <div class="halfpage d-flex justify-content-center align-items-center">
                 <div class="formplaceholder">
                     <form method="post" class="formularioLogin">
