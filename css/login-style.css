@@ -1,4 +1,4 @@
-.left-side, .right-side {
+.halfpage {
     height: 92vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,12 +14,12 @@
     /* filter: blur(2px); */
 }
 
-.left-side {
-
-}
-
-.right-side {
-
+.formplaceholder {
+    background-color: white;
+    width: 50%;
+    padding: 40px;
+    height: 40%;
+    border-radius: 10px;
 }
 
 .card-style {
@@ -36,7 +36,6 @@ h2.tituloLogin {
 .formularioLogin{
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
-    padding-top: 150px;
 }
 
 .btnLogin{
