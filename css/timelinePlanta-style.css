@@ -1,0 +1,30 @@
+.plant-image {   
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.image-border {
+    border: 5px solid #1F3B2C;
+    border-radius: 10%;
+}
+
+.img-pq {
+    max-width: 250px;
+    max-height: 250px;
+    border: 3px solid #1F3B2C;
+    border-radius: 5%;
+    margin-right: 15px;
+}
+
+/* FLEXBOX PARA LINHA DO TEMPO DA PLANTA */
+
+.container > .timeline {
+    display: flex;
+    overflow-x: auto;
+}
+
+/* SEM SCROLLBAR PRA MOBILE */
+
+/* .timeline::-webkit-scrollbar {
+    display: none;
+} */
