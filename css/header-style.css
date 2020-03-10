@@ -8,12 +8,6 @@
     font-size: larger;
 }
 
-/* .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-    font-size: 1.2em;
-} */
-
 @media (max-width: 950px) {
     .logo-header{
         margin-left:auto;
