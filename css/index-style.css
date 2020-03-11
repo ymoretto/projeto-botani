@@ -22,3 +22,15 @@ div.bloco-sobre {
 div.texto-sobre {
     padding-top:50px;
 }
+
+.button-home {
+    background-color:#588068;
+    border: none;
+    color:white;
+}
+
+@media (max-width: 950px) {
+    #bannerHome{
+        display:none;
+    }
+}
