@@ -1,18 +1,13 @@
-.plant-image {   
-    max-width: 700px;
-    max-height: 700px;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Quicksand&display=swap');
 
-.image-border {
-    border: 5px solid #1F3B2C;
-    border-radius: 10%;
+.plant-image {   
+    max-width: 650px;
+    max-height: 650px;
 }
 
 .img-pq {
     max-width: 250px;
     max-height: 250px;
-    border: 3px solid #1F3B2C;
-    border-radius: 5%;
     margin-right: 15px;
 }
 
@@ -22,6 +17,31 @@
     display: flex;
     overflow-x: auto;
 }
+
+.tituloPlaceholder {
+    padding: 30px;
+    margin-left: 10%;
+}
+
+/* TEXTOS */
+
+.tituloPlaceholder > h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #1F3B2C;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.tituloPlanta {
+    font-family: "Poppins", sans-serif;
+    color: #1F3B2C;
+    font-weight: 400;
+}
+
 
 /* SEM SCROLLBAR PRA MOBILE */
 
