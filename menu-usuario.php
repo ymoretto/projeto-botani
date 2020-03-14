@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/menu-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-planta-style.css">
+  <link rel="stylesheet" href="css/feed-style.css">
 
   <title>Botani</title>
 </head>
