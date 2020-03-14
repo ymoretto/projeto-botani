@@ -6,6 +6,11 @@ img.img-user {
     max-width:250px;
 }
 
+img.friend-image {
+    width: 200px;
+    height: 200px;
+}
+
 .nome-usuario {
     padding-top: 2vh;
 }
@@ -28,18 +33,39 @@ hr.linha-user {
     padding-top:2vh;
 }
 
-hr.divisor {
-    border: 2px solid #1F3B2C;
-    max-width: 90vw;
+.detail {
+    font-size: 0.8em;
 }
 
-.foto-planta {
-    width: 200px;
-    height: 200px;
+.badges-session {
+    margin-top: 0.8vh;
+    margin-left:1vw;
 }
 
-.perfilzinho-planta {
-    max-width:200px;
-    max-height:200px;
-    object-fit: fill;
+img.accomplishment{
+    max-width: 50px;
+    background: green;
+    border-radius: 50%;
 }
+
+#amigos-usuario, #plantas-usuario {
+    margin-top: 5vh;
+}
+
+/* FLEXBOX PARA LINHA DO TEMPO DA PLANTA */
+
+.container > .timeline {
+    display: flex;
+    overflow-x: auto;
+}
+
+.tituloPlaceholder {
+    padding: 30px;
+    margin-left: 10%;
+}
+
+/* SEM SCROLLBAR PRA MOBILE */
+
+/* .timeline::-webkit-scrollbar {
+    display: none;
+} */
