@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Quicksand&display=swap');
+
+.plant-image {   
+    max-width: 650px;
+    max-height: 650px;
+    border-radius: 30px;
+}
+
+.img-pq {
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 15px;
+}
+
+/* .dadosPlanta {
+   margin-right: 50%;
+} */
+
+/* FLEXBOX PARA LINHA DO TEMPO DA PLANTA */
+
+.container > .timeline {
+    display: flex;
+    overflow-x: auto;
+}
+
+.tituloPlaceholder {
+    padding: 30px;
+    margin-left: 10%;
+}
+
+/* TEXTOS */
+
+.tituloPlaceholder > h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #1F3B2C;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.tituloPlanta {
+    font-family: "Poppins", sans-serif;
+    color: #1F3B2C;
+    font-weight: 400;
+    margin-left: 10%;
+    padding: 30px;
+}
+
+/* SEM SCROLLBAR PRA MOBILE */
+
+/* .timeline::-webkit-scrollbar {
+    display: none;
+} */

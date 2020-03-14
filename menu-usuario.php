@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="css/menu-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-planta-style.css">
+  <link rel="stylesheet" href="css/timelinePlanta-style.css">
+  <link rel="stylesheet" href="css/listaPlantas-style.css">
+  
 
   <title>Botani</title>
 </head>
@@ -39,7 +42,7 @@
                 <a class="nav-link" href="perfil-usuario.php">Usuário</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="perfil-planta.php">Plantas</a>
+                <a class="nav-link" href="listaPlantas.php">Plantas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Notificações</a>
