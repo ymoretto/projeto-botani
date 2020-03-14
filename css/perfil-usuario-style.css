@@ -1,15 +1,9 @@
-.top-block {
-    background-color: lightgreen;
-    padding: 2vh 0 2vh 0;
-}
 
-.basic-info {
-    padding-left:10vw;
-}
 
-img.foto-perfil {
+img.img-user {
     border: 5px solid #1F3B2C;
     border-radius: 50%;
+    max-width:250px;
 }
 
 .nome-usuario {
@@ -18,15 +12,14 @@ img.foto-perfil {
 
 .basic-info-text {
     font-size: 1.2em;
-    padding-right: 2vh;
 }
 
-hr.titulo { 
+hr.linha-user { 
     display: block;
     color: #1F3B2C;
     overflow: hidden;
     border-style: inset;
-    border-width: 5px;
+    border-width: 4px;
     margin-right:2vh;
     margin-top: 0em;
 }
