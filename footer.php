@@ -1,6 +1,6 @@
 <!-- Início do Footer -->
 
-<footer class="text-center">
+<footer class="text-center footer-botani">
     <p>Projeto Botani &copy; 2020</p>
 </footer>
 
