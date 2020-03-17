@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/header-style.css">
   <link rel="stylesheet" href="css/index-style.css">
   <link rel="stylesheet" href="css/login-style.css">
+  <link rel="stylesheet" href="css/cadastro-usuario-style.css">
 
 
   <title>Botani</title>

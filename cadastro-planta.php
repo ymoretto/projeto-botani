@@ -1,6 +1,6 @@
 <?php require_once("menu-usuario.php") ?>
-<section>
-    <article class="holepage">
+<section class="holePage">
+    <article>
         <h2 class="titulo tituloPlanta">Nova planta</h2>
     </article>
     <article class="cadastroPlanta">
@@ -46,16 +46,4 @@
         </form>
     </article>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
 <?php require_once("footer.php") ?>
