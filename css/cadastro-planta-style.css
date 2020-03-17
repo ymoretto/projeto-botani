@@ -7,6 +7,18 @@
     margin-right: 100px;
 }
 
+.dadosPlanta {
+    padding-left: 50px;
+}
+
+@media (max-width: 992px){
+    
+    .dadosPlanta {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+}
+
 .fotoNovaPlanta {
     max-width: 100%;
     border-radius: 10px;
@@ -24,9 +36,16 @@
     color: #1F3B2C;
 }
 
-.btnCadastro {
+.btnPlaceholder {
+
     margin-top: 50px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCadastro {
     background-color: #1F3B2C;
     color: white;
     font-weight: bold;
@@ -36,4 +55,8 @@
 .btnCadastro:hover {
     color: black;
     background-color: #588068
+}
+
+.holepage {
+    max-height: 100%;
 }
