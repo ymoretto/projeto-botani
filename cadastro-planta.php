@@ -1,7 +1,7 @@
 <?php require_once("menu-usuario.php") ?>
 <section>
-    <article>
-        <h2 class="titulo tituloCadastro">Nova planta</h2>
+    <article class="tituloCadastroBanner bannerCadastroPlanta">
+        <h2 class="tituloCadastro">Nova planta</h2>
     </article>
     <article class="cadastroPlaceholder">
         <form action="" enctype="multipart/form-data" method="post" class="formulario">

@@ -1,8 +1,8 @@
 <?php require_once("header.php") ?>
 
 <section>
-    <article>
-        <h2 class="titulo tituloCadastro">Novo usuário</h2>
+    <article class="tituloCadastroBanner bannerCadastroUsuario">
+        <h2 class="tituloCadastro">Novo usuário</h2>
     </article>
     <article class="cadastroPlaceholder">
         <form action="" enctype="multipart/form-data" method="post" class="formulario">
