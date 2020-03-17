@@ -7,7 +7,18 @@
 </div>
 <div class="row listaPlantas">
 
-    <!-- CARD -->
+    <!-- CARD NOVA PLANTA -->
+    <a href="cadastro-planta.php" target="_blank">
+        <div class="card cardPlanta">
+            <img class="card-img-top" src="images/novaplanta.png" alt="Nova planta">
+            <div class="card-body">
+                <p class="card-text text-center">Nova planta</p>
+            </div>
+        </div>
+    </a>
+    <!-- CARD NOVA PLANTA-->
+
+    <!-- CARD PLANTA -->
     <a href="timeline-planta.php" target="_blank">
         <div class="card cardPlanta">
             <img class="card-img-top" src="images/jiboia.jpeg" alt="Foto da sua planta">
@@ -16,11 +27,11 @@
             </div>
         </div>
     </a>
-    <!-- CARD -->
+    <!-- CARD PLANTA-->
 
     <!-- SPAWN DE CARDS DE TESTE -->
     <?php 
-    for ($i=0; $i <= 10 ; $i++) { 
+    for ($i=0; $i <= 9 ; $i++) { 
 
         echo "<a href='timeline-planta.php' target='_blank'>
         <div class='card cardPlanta'>
