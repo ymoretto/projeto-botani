@@ -1,0 +1,39 @@
+.tituloPlanta {
+    margin-left: 30px;
+}
+
+.cadastroPlanta {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fotoNovaPlanta {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imagemPlaceholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labels {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #1F3B2C;
+}
+
+.btnCadastro {
+    margin-top: 50px;
+
+    background-color: #1F3B2C;
+    color: white;
+    font-weight: bold;
+
+}
+
+.btnCadastro:hover {
+    color: black;
+    background-color: #588068
+}
