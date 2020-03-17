@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/timelinePlanta-style.css">
   <link rel="stylesheet" href="css/listaPlantas-style.css">
   <link rel="stylesheet" href="css/feed-style.css">
+  <link rel="stylesheet" href="css/cadastro-planta-style.css">
   
 
   <title>Botani</title>
