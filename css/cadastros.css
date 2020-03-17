@@ -1,47 +1,49 @@
-.tituloCadastro{
+.tituloCadastro {
     margin-left: 30px;
 }
 
-.cadastroUsuario {
-    margin-top: 50px;
+.cadastroPlaceholder {
     margin-left: 100px;
     margin-right: 100px;
 }
 
-.dadosUsuario {
+.dadosCadastroPlanta, .dadosCadastroUsuario {
     padding-left: 50px;
 }
 
 @media (max-width: 992px){
     
-    .dadosUsuario {
+    .dadosCadastroPlanta {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+
+    .dadosCadastroUsuario {
         padding-left: 0px;
         padding-top: 0px;
     }
 }
 
-.fotoNovoUsuario {
+.novaFotoCadastro {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.imagemPlaceholder {
+.imagemCadastroPlaceholder {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-bottom: 30px;
 }
 
-.labels {
+.labelsCadastro {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #1F3B2C;
 }
 
-.btnPlaceholder {
+.btnCadastroPlaceholder {
 
-    margin-top: 30px;
+    margin-top: 50px;
 
     display: flex;
     justify-content: center;

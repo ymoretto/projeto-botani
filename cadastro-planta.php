@@ -1,9 +1,9 @@
 <?php require_once("menu-usuario.php") ?>
-<section class="holePage">
+<section>
     <article>
-        <h2 class="titulo tituloPlanta">Nova planta</h2>
+        <h2 class="titulo tituloCadastro">Nova planta</h2>
     </article>
-    <article class="cadastroPlanta">
+    <article class="cadastroPlaceholder">
         <form action="" enctype="multipart/form-data" method="post" class="formulario">
             <div class="form-row">
                 <div class="col-lg-4">
@@ -13,31 +13,31 @@
                             <label class="custom-file-label" for="imagemPlanta">Foto da planta</label>
                         </div>
                     </div>
-                    <div class="imagemPlaceholder">
-                        <img class="fotoNovaPlanta" src="images/jiboia.jpeg" alt="Foto da nova planta">
+                    <div class="imagemCadastroPlaceholder">
+                        <img class="novaFotoCadastro" src="images/jiboia.jpeg" alt="Foto da nova planta">
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="dadosPlanta">
+                    <div class="dadosCadastroPlanta">
                         <div class="form-group">
-                            <label for="apelidoPlanta" class="labels">Apelido</label>
+                            <label for="apelidoPlanta" class="labelsCadastro">Apelido</label>
                             <input type="text" name="apelidoPlanta" id="apelidoPlanta" class="form-control"
                                 placeholder="Gertrudes">
                         </div>
                         <div class="form-group">
-                            <label for="sobrePlanta" class="labels">Sobre</label>
+                            <label for="sobrePlanta" class="labelsCadastro">Sobre</label>
                             <textarea class="form-control" name="sobrePlanta" id="sobrePlanta"
                                 rows="5">Gertrudes foi um presente dos meus pais para minha nova casa! Mas meu gato quer comer ela.....</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="especiePlanta" class="labels">Espécie</label>
+                            <label for="especiePlanta" class="labelsCadastro">Espécie</label>
                             <select class="form-control" name="especiePlanta" id="especiePlanta">
                                 <option>Orquídea</option>
                                 <option>Samambaia</option>
                                 <option>Rosa</option>
                             </select>
                         </div>
-                        <div class="btnPlaceholder">
+                        <div class="btnCadastroPlaceholder">
                             <button type="submit" class="btn btnCadastro">Cadastrar Planta</button>
                         </div>
                     </div>
