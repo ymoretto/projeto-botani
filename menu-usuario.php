@@ -45,7 +45,7 @@
                 <a class="nav-link" href="#">Amigos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="feed.php">Main</a>
+                <a class="nav-link" href="feed.php">Feed</a>
               </li>
             </ul>
         </div>
