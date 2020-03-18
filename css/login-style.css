@@ -49,15 +49,21 @@ h2.tituloLogin {
 }
 
 .margin-control-login {
-    margin-bottom:-20vw;
+    margin-bottom: 0vw;
 }
 
 /* MOBILE */
 
+@media (max-width: 992px) {
+
+    .margin-control-login {
+        margin-bottom:-20vw;
+    }
+}
+
 @media (max-width: 1200px){
     .halfpage{
         height: 70vh;
-
     }
 
     .formplaceholder{

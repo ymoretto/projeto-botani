@@ -35,11 +35,9 @@
                                 placeholder="Comente aqui"></textarea>
                             <button type="submit" class="btn">Publicar</button>
                         </div>
-
                     </form>
                 </div>
             </div>
-
             <!-- POST -->
         </div>
     </div>
