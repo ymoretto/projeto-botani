@@ -19,7 +19,7 @@
     <!-- CARD NOVA PLANTA-->
 
     <!-- CARD PLANTA -->
-    <a href="timeline-planta.php" target="_blank">
+    <a href="perfil-planta.php" target="_blank">
         <div class="card cardPlanta">
             <img class="card-img-top" src="images/jiboia.jpeg" alt="Foto da sua planta">
             <div class="card-body">
@@ -33,7 +33,7 @@
     <?php 
     for ($i=0; $i <= 9 ; $i++) { 
 
-        echo "<a href='timeline-planta.php' target='_blank'>
+        echo "<a href='perfil-planta.php' target='_blank'>
         <div class='card cardPlanta'>
             <img class='card-img-top' src='images/jiboia.jpeg' alt='Foto da sua planta'>
             <div class='card-body'>

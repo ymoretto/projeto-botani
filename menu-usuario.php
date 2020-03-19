@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/menu-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-planta-style.css">
-  <link rel="stylesheet" href="css/timelinePlanta-style.css">
   <link rel="stylesheet" href="css/listaPlantas-style.css">
   <link rel="stylesheet" href="css/feed-style.css">
   <link rel="stylesheet" href="css/cadastros.css">
