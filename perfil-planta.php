@@ -3,17 +3,16 @@
 <section id="info-planta">
     <div class="container">
         <div class="row">
-            <h2 class="mt-4 mb-3"> Cacilda </h2>
+            <h2 class="mt-4 mb-3 titulo"> Cacilda </h2>
         </div>
 
         <div class="row">
             <div class="col text-center"> <!-- div da imagem de perfil da planta -->
-                <img class="img-fluid image-border plant-image" src="images/jiboia.jpeg" alt="Imagem da Cacilda"> <!-- tirei img-fluid -->
+                <img class="img-fluid plant-image" src="images/jiboia.jpeg" alt="Imagem da Cacilda"> <!-- tirei img-fluid -->
                 <!-- a imagem está configurada para mudar de tamanho com media query -->
                 <!-- seria legal pensar em uma forma de automatizar isso -->
             </div>
             <div class="col plant-description"> <!-- div das informações da planta -->
-                <h3 class="my-3">Nome da Planta</h3>
                 <p>Uma descrição da planta aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
                 <ul>
                   <li>Espécie</li>
@@ -29,21 +28,19 @@
     <div class="space"></div> <!--Serve apenas para criar um espaço entre os blocos-->
 
     <div class="container">
-        <div class="row timeline-row">
-            <h2>
-                Timeline da Cacilda
-            </h2>
-            <div class="timeline">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
-                <img class="img-pq" src="images/jiboia.jpeg" alt="">
+        <div class="row">
+            <h2 class="titulo">Linha do Tempo</h2>
+        </div>
+        <div class="row">
+            <div class="timelinePlanta">
+                <a href="#"><img class="img-pq" src="images/jiboia.jpeg" alt=""></a>
+                
+                <?php 
+                    for ($i=0; $i < 9; $i++) { 
+                        echo "<a href='#'><img class='img-pq' src='images/jiboia.jpeg'></a>";
+                    }
+                ?>
             </div>
         </div>
     </div>
-
-
 </section>

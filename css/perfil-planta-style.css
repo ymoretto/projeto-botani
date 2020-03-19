@@ -1,12 +1,17 @@
 .img-pq {
     max-width: 250px;
     max-height: 250px;
-    border: 1px solid #1F3B2C;
     border-radius: 5%;
-    margin: 0 0.1vw 0 0.1vw;
+    margin: 0.2vh 0.5vw 1vh 0.5vw;
 }
 
-.timeline-row > .timeline {
+.plant-image{
+    border-radius: 3%;
+}
+
+.timelinePlanta {
+    margin-top: 10px;
+    max-width: 100%;
     display: flex;
     overflow-x: auto;
 }
@@ -15,27 +20,26 @@ div.space {
     margin: 3vw 0 3vw 0;
 }
 
-/* SEM SCROLLBAR PRA MOBILE */
-
-/* .timeline::-webkit-scrollbar {
-    display: none;
-} */
-
 @media (max-width: 900px) {
-    .plant-image{
+    .plant-image {
         max-width: 350px;
         max-height: 350px;
     }
 
-@media (max-width: 400px) {
-    .plant-image{
-        max-width: 300px;
-        max-height: 300px;
+    @media (max-width: 400px) {
+        .plant-image {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        .timelinePlanta::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    @media (max-width: 800px) and (min-width: 510px) {
+        .plant-description {
+            margin: 0 12vw 0 12vw;
+        }
     }
 }
-
-@media (max-width: 800px) and (min-width: 510px) {
-    .plant-description {
-        margin: 0 12vw 0 12vw;
-    }
-} 
