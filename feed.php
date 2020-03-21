@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <textarea class="form-control" name="newComment" id="newComment" col="100%"
                                 placeholder="Comente aqui"></textarea>
-                            <button type="submit" class="btn">Publicar</button>
+                            <button type="submit" class="btn-feed">Publicar</button>
                         </div>
                     </form>
                 </div>
