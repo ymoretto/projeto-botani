@@ -1,57 +1,72 @@
-.feedContainer {
-    padding-top: 30px;
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Quicksand&display=swap');
+
+p {
+    font-family: "Quicksand", sans-serif;
+}
+
+.pageFeed {
+    margin: 0 5vw 0 5vw;
+}
+
+.feedTimelineContainer {
+    margin-top: 100px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-.timeline {
-    max-width: 800px;
-}
-
-.posts {
     flex-direction: column;
-    margin-right: 30px;
-    margin-left: 30px;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .post {
-    margin-bottom: 30px;
-    border-radius: 3px;
-    max-height: 100%;
-    max-height: 100%;
-    border: 2px solid #1F3B2C;
+    margin-bottom: 50px;
+    max-width: 70%;
 }
 
-.headerPost {
-    border-bottom: 0.5px solid #588068;
+@media (min-width: 990px) and (max-width: 1385px) {
+    .post{
+        max-width: 100%;
+    }
+}
+
+.postPhotoPlaceholder, .dadosPostPlaceholder {
+    border: 1px solid #1F3B2C;
+    border-radius: 3px;
+}
+
+.postPhotoPlaceholder > img {
+    max-width: 100%;
+}
+
+.dadosUsuarioPostPlaceholder{
     padding: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+
+    border-bottom: 0.5px solid #1F3B2C;
 }
 
-.headerPost > p {
+.dadosUsuarioPostPlaceholder > p {
     margin-left: 10px;
     margin-top: 10px;
 }
 
-.userIcon {
+.userPostIcon {
     max-width: 50px;
     max-height: 50px;
     border-radius: 50%;
 }
 
-.imagePost {
-    border-bottom: 0.5px solid #588068;
+.postDescriptionPlaceholder, .postActionsPlaceholder, .postCommentsPlaceholder, .newPostComment {
+    padding: 10px;
 }
 
-.imagePost > img {
-    max-width: 100%;
+.postDescriptionPlaceholder {
+    border-bottom: 0.5px solid #1F3B2C;
 }
 
-.postActions{
+.postActionsPlaceholder {
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -59,32 +74,32 @@
     align-items: center;
 }
 
-.postActions > img {
+.postActionsPlaceholder > button {
+    background-color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.postActionIcon {
     max-width: 30px;
     margin-right: 20px;
 }
 
-.postDescription, .postComments {
-    padding: 10px;
-}
-
-.postDescription > p {
+.postComment > p{
     display: inline-block;
     vertical-align: top;
 }
 
-.comment > p {
-    display: inline-block;
-    vertical-align: top;
+.btn-primary {
+    background-color: #1F3B2C;
+    color: white;
+    border-color: #1F3B2C;;
 }
 
-.btn {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
-    color: #588068;
+.btn-primary:hover {
+    background-color: #588068;
+    color: black;
+    border-color: #588068;;
 }
 
-.userName {
-    color: #1F3B2C;
-}
+
