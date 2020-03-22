@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="css/perfil-planta-style.css">
   <link rel="stylesheet" href="css/listaPlantas-style.css">
   <link rel="stylesheet" href="css/feed-style.css">
-  <link rel="stylesheet" href="css/cadastros.css">
+  <link rel="stylesheet" href="css/cadastros-style.css">
+  <link rel="stylesheet" href="css/novo-post-style.css">
   
 
   <title>Botani</title>
