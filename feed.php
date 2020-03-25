@@ -1,6 +1,9 @@
 <?php require_once("menu-usuario.php") ?>
 
-<section class=" pageFeed">
+<section class="pageFeed">
+    <div class="newPostBtnContainerFeed">
+        <a class="btn btn-primary newPostBtnFeed" href="novo-post.php" role="button">Novo Post</a>
+    </div>
     <div class="feedTimelineContainer">
 
         <!-- INICIO DE UM POST -->
