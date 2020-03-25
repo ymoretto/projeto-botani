@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="css/perfil-usuario-style.css">
   <link rel="stylesheet" href="css/perfil-planta-style.css">
   <link rel="stylesheet" href="css/listaPlantas-style.css">
-  <link rel="stylesheet" href="css/feed-style.css">
   <link rel="stylesheet" href="css/cadastros-style.css">
   <link rel="stylesheet" href="css/novo-post-style.css">
+  <link rel="stylesheet" href="css/feed-style.css">
   
 
   <title>Botani</title>
@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse nav-text" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="perfil-usuario.php">Usuário</a>
+                <a class="nav-link" href="perfil-usuario.php">Meu Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="listaPlantas.php">Plantas</a>
+                <a class="nav-link" href="listaPlantas.php">Minhas Plantas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Notificações</a>
