@@ -27,7 +27,7 @@
             <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header">
         </a>
   
-        <div class="collapse navbar-collapse nav-text" id="navbarNav">
+        <div class="collapse navbar-collapse nav-text" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="perfil-usuario.php">Usuário</a>
