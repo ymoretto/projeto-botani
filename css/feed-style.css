@@ -61,9 +61,10 @@ p {
     border-bottom: 0.5px solid #1F3B2C;
 }
 
-.dadosUsuarioPostPlaceholder > p {
+.dadosUsuarioPostPlaceholder > a {
     margin-left: 10px;
     margin-top: 10px;
+    color: black;
 }
 
 .userPostIcon {
@@ -78,6 +79,10 @@ p {
 
 .postDescriptionPlaceholder {
     border-bottom: 0.5px solid #1F3B2C;
+}
+
+.postDescriptionPlaceholder > a{
+    color:black;
 }
 
 .postActionsPlaceholder {
@@ -116,4 +121,21 @@ p {
     border-color: #588068;;
 }
 
+.btnExcluirPost {
+    border: 1px solid darkred;
+    border-radius: 5px;
+    color: darkred;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.btnEditarPerfil:hover{
+    text-decoration: none;
+    color: red;
+}
 

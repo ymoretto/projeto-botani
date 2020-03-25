@@ -21,6 +21,7 @@
                   <li>Algo do tipo</li>
                 </ul>
                 <a name="editarPlanta" id="editarPlanta" class="btnEditarPlanta" href="#" role="button">Editar Planta</a>
+                <a name="excluirPlanta" id="excluirPlanta" class="btnExcluirPlanta" href="#" role="button">Excluir Planta</a>
             </div> <!-- close plant col -->
 
         </div> <!-- close row -->
