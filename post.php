@@ -1,9 +1,6 @@
 <?php require_once("menu-usuario.php") ?>
 
 <section class="pageFeed">
-    <div class="newPostBtnContainerFeed">
-        <a class="btn btn-primary newPostBtnFeed" href="novo-post.php" role="button">Novo Post</a>
-    </div>
     <div class="feedTimelineContainer">
 
         <!-- INICIO DE UM POST -->
@@ -15,14 +12,15 @@
                 <div class="col-lg-6 dadosPostPlaceholder">
                     <div class="dadosUsuarioPostPlaceholder">
                         <img class="userPostIcon" src="images/perfil-botania-planticia.jpg">
-                        <a href="perfil-usuario.php"><p><b>botania_planticia</b></p></a>
+                        <p><b>botania_planticia</b></p>
+                        <a name="excluirPost" id="excluirPost" class="btnExcluirPost" href="#" role="button">Editar Perfil</a>
                     </div>
                     <div class="postDescriptionPlaceholder">
-                        <a href="perfil-planta.php"><p><b>Gertrudes - Samambaia</b></p></a>
+                        <p><b>Gertrudes - Samambaia</b></p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id eum quae hic. Beatae illo
                             architecto optio! Ab, autem adipisci voluptatibus animi perferendis inventore alias cumque,
                             provident deserunt, hic porro architecto.</p>
-                        <a href="post.php"><small>21 de março de 2020</small></a>
+                        <small>21 de março de 2020</small>
                     </div>
                     <div class="postActionsPlaceholder">
                         <img class="postActionIcon" src="images/hearticon.svg">
@@ -41,43 +39,6 @@
             </div>
         </div>
         <!-- FINAL DE UM POST -->
-
-        <?php for ($i=0; $i <= 3; $i++) { 
-            echo 
-            "<div class='post'>
-            <div class='row no-gutters'>
-                <div class='col-lg-6 postPhotoPlaceholder'>
-                    <img src='images/jiboia.jpeg'>
-                </div>
-                <div class='col-lg-6 dadosPostPlaceholder'>
-                    <div class='dadosUsuarioPostPlaceholder'>
-                        <img class='userPostIcon' src='images/perfil-botania-planticia.jpg'>
-                        <p><b>botania_planticia</b></p>
-                    </div>
-                    <div class='postDescriptionPlaceholder'>
-                        <p><b>Gertrudes - Samambaia</b></p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id eum quae hic. Beatae illo
-                            architecto optio! Ab, autem adipisci voluptatibus animi perferendis inventore alias cumque,
-                            provident deserunt, hic porro architecto.</p>
-                        <small>21 de março de 2020</small>
-                    </div>
-                    <div class='postActionsPlaceholder'>
-                        <img class='postActionIcon' src='images/hearticon.svg'>
-                        <button data-toggle='modal' data-target='#newCommentModal'>
-                            <img class='postActionIcon' src='images/commenticon.svg'>
-                        </button>
-                    </div>
-                    <div class='postCommentsPlaceholder'>
-                        <p><b>Comentários</b></p>
-                        <div class='postComment'>
-                            <p><b>helomdrs</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>";
-        } ?>
     </div>
 </section>
 

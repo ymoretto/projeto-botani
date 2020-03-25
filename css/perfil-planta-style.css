@@ -62,3 +62,21 @@ div.space {
     text-decoration: none;
     color: #1F3B2C;
 }
+
+.btnExcluirPost {
+    border: 2px solid darkred;
+    border-radius: 5px;
+    color: darkred;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnEditarPerfil:hover{
+    text-decoration: none;
+    color: red;
+}
