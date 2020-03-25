@@ -1,0 +1,89 @@
+.tituloCadastro {
+    margin-left: 100px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+
+    text-shadow: 2px 2px 5px #1F3B2C;
+}
+
+.tituloCadastroBanner {
+    height: 200px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.bannerCadastroPlanta{
+    background-image: url(../images/jardim2.png);
+}
+
+.bannerCadastroUsuario {
+    background-image: url(../images/vasos.png);
+}
+
+.cadastroPlaceholder {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.dadosCadastroPlanta, .dadosCadastroUsuario {
+    padding-left: 50px;
+}
+
+@media (max-width: 992px){
+    
+    .dadosCadastroPlanta {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+
+    .dadosCadastroUsuario {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+}
+
+.novaFotoCadastro {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imagemCadastroPlaceholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelsCadastro {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #1F3B2C;
+}
+
+.btnCadastroPlaceholder {
+
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCadastro {
+    background-color: #1F3B2C;
+    color: white;
+    font-weight: bold;
+
+}
+
+.btnCadastro:hover {
+    color: black;
+    background-color: #588068
+}

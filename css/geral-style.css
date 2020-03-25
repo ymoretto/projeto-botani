@@ -1,6 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:600|Quicksand&display=swap');
 
-p {
+p, li {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
 }
@@ -20,4 +21,8 @@ button.form-contato {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.footer-botani {
+    margin-top: 5vw;
 }

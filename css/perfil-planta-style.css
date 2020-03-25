@@ -1,0 +1,64 @@
+.img-pq {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5%;
+    margin: 0.2vh 0.5vw 1vh 0.5vw;
+}
+
+.plant-image{
+    border-radius: 3%;
+}
+
+.timelinePlanta {
+    margin-top: 10px;
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+div.space {
+    margin: 3vw 0 3vw 0;
+}
+
+@media (max-width: 900px) {
+    .plant-image {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    @media (max-width: 400px) {
+        .plant-image {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        .timelinePlanta::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    @media (max-width: 800px) and (min-width: 510px) {
+        .plant-description {
+            margin: 0 12vw 0 12vw;
+        }
+    }
+}
+
+.btnEditarPlanta {
+    background-color: white; /* Green */
+    border: 2px solid #1F3B2C;
+    border-radius: 5px;
+    color: #1F3B2C;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnEditarPlanta:hover{
+    text-decoration: none;
+    color: #1F3B2C;
+}

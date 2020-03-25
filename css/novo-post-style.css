@@ -1,0 +1,28 @@
+.tituloPagina {
+    margin-left: 25vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.novo-post {
+    margin-left: 25vw;
+    margin-right: 20vw;
+}
+
+.form-post {
+    padding-right:5vw;
+}
+
+@media (max-width: 950px) {
+    .novo-post{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .form-post{
+        padding:0;
+    }
+}

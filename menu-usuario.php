@@ -12,6 +12,13 @@
   <link rel="shortcut icon" href="#" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/geral-style.css">
   <link rel="stylesheet" href="css/menu-usuario-style.css">
+  <link rel="stylesheet" href="css/perfil-usuario-style.css">
+  <link rel="stylesheet" href="css/perfil-planta-style.css">
+  <link rel="stylesheet" href="css/listaPlantas-style.css">
+  <link rel="stylesheet" href="css/cadastros-style.css">
+  <link rel="stylesheet" href="css/novo-post-style.css">
+  <link rel="stylesheet" href="css/feed-style.css">
+  
 
   <title>Botani</title>
 </head>
@@ -22,18 +29,22 @@
 
 <header>
 
-    <nav class="transparent navbar  navbar-expand-lg navbar-light row d-flex justify-content-center">
+    <nav class="transparent navbar navbar-expand-lg navbar-light row d-flex justify-content-center">
+
         <a class="navbar-brand" href="index.php">
             <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header">
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
   
         <div class="collapse navbar-collapse nav-text" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="perfil-usuario.php">Usuário</a>
+                <a class="nav-link" href="perfil-usuario.php">Meu Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="perfil-planta.php">Plantas</a>
+                <a class="nav-link" href="listaPlantas.php">Minhas Plantas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Notificações</a>
@@ -42,7 +53,7 @@
                 <a class="nav-link" href="#">Amigos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="feed.php">Main</a>
+                <a class="nav-link" href="feed.php">Feed</a>
               </li>
             </ul>
         </div>

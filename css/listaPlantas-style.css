@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Quicksand&display=swap');
+
+.tituloPlaceholder > h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #1F3B2C;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.listaPlantas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cardPlanta {
+    width: 18rem;
+    margin: 10px;
+}
+
+.cardPlanta > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a > div > img > div > p {
+    text-decoration: none;
+}

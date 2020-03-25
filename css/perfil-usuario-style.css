@@ -1,0 +1,102 @@
+.imgUserPlaceholderPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.img-user {
+    border-radius: 50%;
+    max-width:250px;
+}
+
+.nome-usuario {
+    padding-top: 2vh;
+}
+
+.basic-info-text {
+    font-size: 1.2em;
+}
+
+.h2-perfil {
+    padding-top:2vh;
+}
+
+.detail {
+    font-size: 0.8em;
+}
+
+.badges-session {
+    margin-top: 0.8vh;
+    margin-left:1vw;
+}
+
+.badges-session > div {
+    margin-top: 0.5vh;
+
+    display: flex;
+    align-self: start;
+    justify-content: start;
+}
+
+img.accomplishment{
+    max-width: 50px;
+    background: green;
+    border-radius: 50%;
+
+    margin-left: 1vh;
+}
+
+#amigos-usuario, #plantas-usuario {
+    margin-top: 5vh;
+}
+
+.btnEditarPerfil {
+    background-color: white; /* Green */
+    border: 2px solid #1F3B2C;
+    border-radius: 5px;
+    color: #1F3B2C;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnEditarPerfil:hover{
+    text-decoration: none;
+    color: #1F3B2C;
+}
+
+.plantasEAmigosUsuario {
+    margin-top: 10px;
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.img-pq {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5%;
+    margin: 0.2vh 0.5vw 1vh 0.5vw;
+}
+
+.img-pq-amigos {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5%;
+    margin: 0.2vh 0.5vw 1vh 0.5vw;
+}
+
+.tituloPlaceholder {
+    padding: 30px;
+    margin-left: 10%;
+}
+
+/* SEM SCROLLBAR PRA MOBILE */
+
+/* .timeline::-webkit-scrollbar {
+    display: none;
+} */
