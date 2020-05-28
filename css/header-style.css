@@ -4,6 +4,10 @@
     margin-left:20vw;
 }
 
+.img-brand {
+    flex: 1 0 15%;
+}
+
 .header-text{
     font-size: larger;
 }

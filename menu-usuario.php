@@ -31,8 +31,8 @@
 
     <nav class="transparent navbar navbar-expand-lg navbar-light row d-flex justify-content-center">
 
-        <a class="navbar-brand" href="index.php">
-            <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header">
+        <a class="navbar-brand img-brand" href="index.php">
+            <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header d-block ml-auto mr-2">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
