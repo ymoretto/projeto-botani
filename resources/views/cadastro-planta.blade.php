@@ -1,4 +1,4 @@
-<?php require_once("menu-usuario.php") ?>
+@extends ('menu-usuario')
 <section>
     <article class="tituloCadastroBanner bannerCadastroPlanta">
         <h2 class="tituloCadastro">Nova planta</h2>
@@ -46,4 +46,4 @@
         </form>
     </article>
 </section>
-<?php require_once("footer.php") ?>
+@extends ('footer')

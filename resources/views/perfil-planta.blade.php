@@ -1,4 +1,4 @@
-<?php require_once("menu-usuario.php") ?>
+@extends ('menu-usuario')
 
 <section id="info-planta">
     <div class="container">
@@ -47,3 +47,5 @@
         </div>
     </div>
 </section>
+
+@extends ('footer')

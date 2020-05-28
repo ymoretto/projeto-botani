@@ -1,4 +1,4 @@
-<?php require_once("menu-usuario.php") ?>
+@extends ('menu-usuario')
 
 
 <h2 class="tituloPagina">Adicione uma Nova Foto</h2>
@@ -32,4 +32,4 @@
 </section>
 
 
-<?php require_once("footer.php") ?>
+@extends ('footer')

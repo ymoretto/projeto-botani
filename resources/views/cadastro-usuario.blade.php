@@ -1,4 +1,4 @@
-<?php require_once("header.php") ?>
+@extends ('menu-usuario')
 
 <section>
     <article class="tituloCadastroBanner bannerCadastroUsuario">
@@ -77,4 +77,4 @@
     </article>
 </section>
 
-<?php require_once("footer.php") ?>
+@extends ('footer')
