@@ -1,4 +1,4 @@
-@extends ('menu-usuario')
+@include ('menu-usuario')
 
 
 <h2 class="tituloPagina">Adicione uma Nova Foto</h2>
@@ -32,4 +32,4 @@
 </section>
 
 
-@extends ('footer')
+@include ('footer')

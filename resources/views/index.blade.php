@@ -1,4 +1,4 @@
-@extends ('header')
+@include ('header')
 
 <!-- Index -->
 
@@ -73,4 +73,4 @@
 
 <!-- Fim da Sections de Contato --> 
 
-@extends ('footer')
+@include ('footer')

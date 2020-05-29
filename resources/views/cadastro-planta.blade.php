@@ -1,4 +1,4 @@
-@extends ('menu-usuario')
+@include ('menu-usuario')
 <section>
     <article class="tituloCadastroBanner bannerCadastroPlanta">
         <h2 class="tituloCadastro">Nova planta</h2>
@@ -46,4 +46,4 @@
         </form>
     </article>
 </section>
-@extends ('footer')
+@include ('footer')

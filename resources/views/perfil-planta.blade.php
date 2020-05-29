@@ -1,4 +1,4 @@
-@extends ('menu-usuario')
+@include ('menu-usuario')
 
 <section id="info-planta">
     <div class="container">
@@ -48,4 +48,4 @@
     </div>
 </section>
 
-@extends ('footer')
+@include ('footer')

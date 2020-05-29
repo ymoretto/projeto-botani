@@ -1,4 +1,4 @@
-@extends ('menu-usuario')
+@include ('menu-usuario')
 
 <div class="row justify-content-start">
     <div class="tituloPlaceholder">
@@ -47,4 +47,4 @@
     <!-- SPAWN DE CARDS DE TESTE -->
 </div>
 
-@extends ('footer')
+@include ('footer')

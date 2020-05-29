@@ -1,4 +1,4 @@
-@extends ('menu-usuario')
+@include ('menu-usuario')
 
 <section class="pageFeed">
     <div class="newPostBtnContainerFeed">
@@ -111,4 +111,4 @@
 <!-- FIM DO MODAL DE FAZER COMENTÁRIO -->
 
 
-@extends ('footer')
+@include ('footer')

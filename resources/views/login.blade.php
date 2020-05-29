@@ -1,4 +1,4 @@
-@extends ('header')
+@include ('header')
 
 <!-- Login -->
 <section class="login login-image">
@@ -56,4 +56,4 @@
 </section>
 <!-- Fim da Section de Login -->
 
-@extends ('footer')
+@include ('footer')
