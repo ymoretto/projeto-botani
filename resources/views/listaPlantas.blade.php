@@ -1,4 +1,4 @@
-<?php require_once("menu-usuario.php") ?>
+@include ('menu-usuario')
 
 <div class="row justify-content-start">
     <div class="tituloPlaceholder">
@@ -47,4 +47,4 @@
     <!-- SPAWN DE CARDS DE TESTE -->
 </div>
 
-<?php require_once("footer.php") ?>
+@include ('footer')

@@ -1,4 +1,4 @@
-<?php require_once("header.php") ?>
+@include ('header')
 
 <!-- Login -->
 <section class="login login-image">
@@ -56,4 +56,4 @@
 </section>
 <!-- Fim da Section de Login -->
 
-<?php require_once("footer.php") ?>
+@include ('footer')

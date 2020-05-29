@@ -1,4 +1,4 @@
-<?php require_once("menu-usuario.php") ?>
+@include ('menu-usuario')
 
 <section class="pageFeed">
     <div class="feedTimelineContainer">
@@ -72,4 +72,4 @@
 <!-- FIM DO MODAL DE FAZER COMENTÁRIO -->
 
 
-<?php require_once("footer.php") ?>
+@include ('footer')

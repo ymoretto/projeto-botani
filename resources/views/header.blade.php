@@ -1,4 +1,4 @@
-<?php require_once("functions.php") ?>
+@extends ('functions')
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -44,7 +44,7 @@
                 <a class="nav-link nav-right header-text" href="index.php#contato">Contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-right header-text loginBtn" href="login.php"><strong>Entrar</strong></a>   
+                <a class="nav-link nav-right header-text loginBtn" href="login"><strong>Entrar</strong></a>   
               </li>
           </ul>
       </div>

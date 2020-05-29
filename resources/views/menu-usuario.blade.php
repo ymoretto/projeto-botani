@@ -1,4 +1,4 @@
-<?php require_once("functions.php") ?>
+@extends ('functions')
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -31,7 +31,7 @@
 
     <nav class="transparent navbar navbar-expand-lg navbar-light row d-flex justify-content-center">
 
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="index">
             <img src="images/botani-logo-folha.png" alt="Botani" class="logo-header">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse nav-text" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="perfil-usuario.php">Meu Perfil</a>
+                <a class="nav-link" href="perfil">Meu Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="listaPlantas.php">Minhas Plantas</a>
+                <a class="nav-link" href="listaPlantas">Minhas Plantas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Notificações</a>
@@ -53,7 +53,7 @@
                 <a class="nav-link" href="#">Amigos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="feed.php">Feed</a>
+                <a class="nav-link" href="feed">Feed</a>
               </li>
             </ul>
         </div>
