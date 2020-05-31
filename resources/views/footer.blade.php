@@ -1,7 +1,7 @@
 <!-- Início do Footer -->
 
-<footer class="text-center footer-botani fixed-bottom">
-    <p>Projeto Botani &copy; 2020</p>
+<footer class="footer-botani">
+    <p class="p-footer">Projeto Botani &copy; 2020</p>
 </footer>
 
 <!-- Fim do Footer -->
