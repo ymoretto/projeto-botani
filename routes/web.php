@@ -25,9 +25,7 @@ Route::get('/feed', function () {
     return view('feed');
 });
 
-Route::get('/perfil', function () {
-    return view('perfil');
-});
+Route::get('/perfil/{user}', 'ProfilesController@index')->name('perfil.show');
 
 Route::get('/listaPlantas', function () {
     return view('listaPlantas');

@@ -10,7 +10,7 @@
             </div>
 
             <div class="col-md-9 basic-info-text">
-                <h2 class="nome-usuario titulo">Botânia Plantícia</h2>
+                <h2 class="nome-usuario titulo">{{ $user->username }}</h2>
                 <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="#" role="button">Editar Perfil</a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Desde Janeiro/2020</li>
