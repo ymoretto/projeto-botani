@@ -13,12 +13,10 @@
                 <h2 class="nome-usuario titulo">{{ $user->username }}</h2>
                 <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="#" role="button">Editar Perfil</a>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Desde Janeiro/2020</li>
+                    <li class="list-group-item">Membro desde: {{ $user->created_at }}</li>
                     <li class="list-group-item">1 Planta</li>
                     <li class="list-group-item">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ad, fugit quasi odit provident
-                        eaque voluptas ea numquam totam laudantium? Voluptate cumque eaque eveniet temporibus similique
-                        ducimus ex asperiores accusantium!
+                        {{ $user->profile->description }}
                         <!-- <br><span class="badge badge-primary badge-pill">editar</span> -->
                     </li>
 
