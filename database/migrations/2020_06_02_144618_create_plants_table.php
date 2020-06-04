@@ -15,8 +15,10 @@ class CreatePlantsTable extends Migration
     {
         Schema::create('plants', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->text('description')->nullable();
-            $table->string('especie');
+            $table->string('species');
+            $table->string('image');
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });

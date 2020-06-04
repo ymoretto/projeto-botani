@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/', function () {
     return view('index');
-});
-
-Route::get('/login', function () {
-    return view('login');
 });
 
 Route::get('/feed', function () {
@@ -27,29 +27,38 @@ Route::get('/feed', function () {
 
 Route::get('/perfil/{user}', 'ProfilesController@index')->name('perfil.show');
 
-Route::get('/listaPlantas', function () {
-    return view('listaPlantas');
-});
+Route::get('/plants/create', 'PlantsController@create');
+Route::post('/plants', 'PlantsController@store');
 
-Route::get('/cadastro-planta', function() {
-    return view('cadastro-planta');
-});
+Route::get('/posts/create', 'PostsController@create');
+Route::post('/posts', 'PostsController@store');
 
-Route::get('/cadastro-usuario', function() {
-    return view('cadastro-usuario');
-});
+// Rotas antigas
 
-Route::get('/novo-post', function() {
-    return view('novo-post');
-});
+// Route::get('/listaPlantas', function () {
+//     return view('listaPlantas');
+// });
 
-Route::get('/perfil-planta', function() {
-    return view('perfil-planta');
-});
+// Route::get('/cadastro-planta', function() {
+//     return view('cadastro-planta');
+// });
 
-Route::get('/post', function() {
-    return view('post');
-});
-Auth::routes();
+// Route::get('/cadastro-usuario', function() {
+//      return view('cadastro-usuario');
+//  });
 
-Route::get('/home', 'HomeController@index')->name('home');
+//  Route::get('/login', function () {
+//     return view('login');
+// });
+
+// Route::get('/novo-post', function() {
+//     return view('novo-post');
+// });
+
+// Route::get('/perfil-planta', function() {
+//     return view('perfil-planta');
+// });
+
+// Route::get('/post', function() {
+//     return view('post');
+// });

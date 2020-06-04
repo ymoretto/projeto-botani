@@ -8,7 +8,7 @@
 <div class="row listaPlantas">
 
     <!-- CARD NOVA PLANTA -->
-    <a href="cadastro-planta.php" target="_blank">
+    <a href="cadastro-planta" target="_blank">
         <div class="card cardPlanta">
             <img class="card-img-top" src="images/novaplanta.png" alt="Nova planta">
             <div class="card-body">
