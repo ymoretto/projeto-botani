@@ -30,11 +30,13 @@ Route::post('/plants', 'PlantsController@store');
 Route::get('/posts/create', 'PostsController@create');
 Route::post('/posts', 'PostsController@store');
 
+Route::get('/plants', function () {
+    return view('plants');
+ });
+
 // Rotas antigas
 
-// Route::get('/listaPlantas', function () {
-//     return view('listaPlantas');
-// });
+
 
 // Route::get('/cadastro-planta', function() {
 //     return view('cadastro-planta');

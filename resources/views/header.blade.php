@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Fim do Boostrap -->
   <link rel="shortcut icon" href="images/menu-icon.svg" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="css/geral-style.css">
-  <link rel="stylesheet" href="css/header-style.css">
-  <link rel="stylesheet" href="css/index-style.css">
-  <link rel="stylesheet" href="css/login-style.css">
-  <link rel="stylesheet" href="css/cadastros-style.css">
+  <link rel="stylesheet" href="{{ asset('css/geral-style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/header-style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/index-style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/login-style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/cadastros-style.css') }}">
 
 
   <title>Botani</title>

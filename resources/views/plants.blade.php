@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 @include ('menu-usuario')
 
 <div class="row justify-content-start">
@@ -8,7 +10,7 @@
 <div class="row listaPlantas">
 
     <!-- CARD NOVA PLANTA -->
-    <a href="cadastro-planta" target="_blank">
+    <a href="plants/create">
         <div class="card cardPlanta">
             <img class="card-img-top" src="images/novaplanta.png" alt="Nova planta">
             <div class="card-body">

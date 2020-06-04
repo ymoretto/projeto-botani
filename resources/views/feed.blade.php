@@ -2,7 +2,7 @@
 
 <section class="pageFeed">
     <div class="newPostBtnContainerFeed">
-        <a class="btn btn-primary newPostBtnFeed" href="novo-post.php" role="button">Novo Post</a>
+        <a class="btn btn-primary newPostBtnFeed" href="posts/create" role="button">Novo Post</a>
     </div>
     <div class="feedTimelineContainer">
 

@@ -13,12 +13,12 @@ class PostsController extends Controller
     public function store() {
 
         $data = request()->validate([
-            'qual-planta' => 'required',
+            'plant_id' => 'required',
             'description' => 'required',
             'image-post' => ['required', 'image'],
         ]);
 
-        \App\Post::create($data);
+        auth()->user()->posts()->create($data);
 
         return request()->all();
     }
