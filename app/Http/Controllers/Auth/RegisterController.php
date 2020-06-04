@@ -54,6 +54,9 @@ class RegisterController extends Controller
             'username' => ['required', 'string', 'max:50', 'unique:users'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'description' => '',
+            'gender' => '',
+            'image' => '',
         ]);
     }
 
@@ -70,6 +73,9 @@ class RegisterController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'description' => $data['description'],
+            'gender' => $data['gender'],
+            'image' => $data['image'],
         ]);
     }
 }

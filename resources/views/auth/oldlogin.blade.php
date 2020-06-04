@@ -1,29 +1,24 @@
-@include ('header')
+@extends('layouts.app')
 
-<!-- Login -->
-<section class="login login-image">
-    <div class="row no-gutters">
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Login') }}</div>
 
-        <!-- Lado Esquerdo da Tela [Login] -->
-        <div class="col-lg-6 col-sm-12 margin-control-login">
-            <div class="halfpage d-flex justify-content-center align-items-center">
-                <div class="formplaceholder">
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
+                <div class="card-body">
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
 
-                        <div class="form-group">
-                            <h2 class="tituloLogin">{{ __('Login') }}</h2>
-                        </div>
-
-                        <!-- Bloco de Usuário ou Email -->
-                        <div class="form-group">
-                            <label for="login" class="col-sm-12 text-md-left">
+                        <div class="form-group row">
+                            <label for="login" class="col-sm-4 col-form-label text-md-right">
                                 {{ __('Username or Email') }}
                             </label>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <input id="login" type="text"
-                                       class="input-login form-control{{ $errors->has('username') || $errors->has('email') ? ' is-invalid' : '' }}"
+                                       class="form-control{{ $errors->has('username') || $errors->has('email') ? ' is-invalid' : '' }}"
                                        name="login" value="{{ old('username') ?: old('email') }}" required autofocus>
 
                                 @if ($errors->has('username') || $errors->has('email'))
@@ -34,10 +29,10 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
@@ -47,7 +42,6 @@
                                 @enderror
                             </div>
                         </div>
-
 
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
@@ -74,32 +68,10 @@
                                 @endif
                             </div>
                         </div>
-
-
                     </form>
                 </div>
             </div>
         </div>
-
-        <!-- Lado Direito da Tela [Cadastro] -->
-        <div class="col-lg-6 col-sm-12">
-            <div class="halfpage d-flex justify-content-center align-items-center">
-                <div class="formplaceholder">
-                    <h2 class="tituloLogin">Cadastre-se</h2>
-                    
-                    <p>Ainda não tem cadastro no Botani?</p>
-                    <br>
-                    <p>Crie sua conta agora mesmo!</p>
-
-                    <a href="register"><button  class="btn btn-primary">Cadastre-se                
-                    </button></a>
-
-                </div>
-            </div>
-        </div>
-
     </div>
-</section>
-<!-- Fim da Section de Login -->
-
-@include ('footer')
+</div>
+@endsection

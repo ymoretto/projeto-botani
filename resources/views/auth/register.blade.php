@@ -1,91 +1,124 @@
 @extends('layouts.app')
+@include ('menu-usuario')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<section>
+    <article class="tituloCadastroBanner bannerCadastroUsuario">
+        <h2 class="tituloCadastro">Novo usuário</h2>
+    </article>
+    <article class="cadastroPlaceholder">
+        <form action="{{ route('register') }}" enctype="multipart/form-data" method="POST" class="formulario">
+            @csrf
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+            <div class="form-row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="image" name="image">
+                            <label class="custom-file-label" for="image">Uma foto sua</label>
+                        </div>
+                    </div>
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                    <div class="imagemCadastroPlaceholder">
+                        <img class="novaFotoCadastro" src="images/perfil-botania-planticia.jpg" alt="Sua foto de perfil">
+                    </div>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <div class="form-group">
+                        <label for="password" class="labelsCadastro">Senha</label>
+                        <input type="password" class="form-control @error('password') is-invalid @enderror" 
+                        name="password" id="password"
+                        required autocomplete="new-password">
+
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password-confirm" class="labelsCadastro">Confirme sua senha</label>
+                        <input type="password" class="form-control" name="password_confirmation" id="password-confirm"
+                        required autocomplete="new-password">
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="dadosCadastroUsuario">
+                        <div class="form-group">
+                            <label for="name" class="labelsCadastro">Seu Nome</label>
+                            <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror"
+                                value="{{ old('name') }}" required autocomplete="name" autofocus
+                                placeholder="Botânia Plantícia da Silva">
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
+                        <div class="form-group">
+                            <label for="username" class="labelsCadastro">Username</label>
+                            <input type="text" name="username" id="username" class="form-control @error('username') is-invalid @enderror"
+                                value="{{ old('username') }}" required autocomplete="username" autofocus
+                                placeholder="bot_planticia">
 
                                 @error('username')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                        <div class="form-group">
+                            <label for="email" class="labelsCadastro">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror"
+                                value="{{ old('username') }}" required autocomplete="email"
+                                placeholder="botania.planticia@gmail.com">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description" class="labelsCadastro">Sobre você</label>
+                            <textarea class="form-control" name="description" id="description"
+                                rows="2"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- <div class="col">
+                                <div class="form-group">
+                                    <label for="date_of_birth" class="labelsCadastro">Sua data de nascimento</label>
+                                    <input type="date" name="date_of_birth" id="date_of_birth" class="form-control"
+                                    value="" placeholder="18/10/1996">
+                                </div>
+                            </div> -->
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="gender" class="labelsCadastro">Gênero</label>
+                                    <select class="form-control" name="gender" id="gender">
+                                        <option>Feminino</option>
+                                        <option>Masculino</option>
+                                        <option>Não-binário</option>
+                                        <option>Prefiro não informar</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                        <div class="btnCadastroPlaceholder">
+                            <button type="submit" class="btn btnCadastro">{{ __('Register') }}</button>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-@endsection
+        </form>
+    </article>
+</section>
+
+@include ('footer')
