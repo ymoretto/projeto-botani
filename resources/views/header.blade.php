@@ -1,5 +1,3 @@
-@extends ('functions')
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,11 +8,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Fim do Boostrap -->
   <link rel="shortcut icon" href="images/menu-icon.svg" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="{{ asset('css/geral-style.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/header-style.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/index-style.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/login-style.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/cadastros-style.css') }}">
+  <link rel="stylesheet" href="css/geral-style.css">
+  <link rel="stylesheet" href="css/header-style.css">
+  <link rel="stylesheet" href="css/index-style.css">
+  <link rel="stylesheet" href="css/login-style.css">
+  <link rel="stylesheet" href="css/cadastros-style.css">
 
 
   <title>Botani</title>
@@ -35,16 +33,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                  <a class="nav-link header-text" href="index.php">Home</a>
+                  <a class="nav-link header-text" href="home">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link header-text" href="index.php#sobre">Sobre Nós</a>
+                  <a class="nav-link header-text" href="home#sobre">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-right header-text" href="index.php#contato">Contato</a>
+                <a class="nav-link nav-right header-text" href="home#contato">Contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-right header-text loginBtn" href="login"><strong>Acesse / Cadastre-se</strong></a>   
+                <a class="nav-link nav-right header-text loginBtn" href="{{ route('login') }}"><strong>Acesse</strong></a>   
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-right header-text loginBtn" href="{{ route('register') }}"><strong>Cadastre-se</strong></a>   
               </li>
           </ul>
       </div>

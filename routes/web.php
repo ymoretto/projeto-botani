@@ -22,17 +22,17 @@ Route::get('/feed', function () {
     return view('feed');
 });
 
-Route::get('/perfil/{user}', 'ProfilesController@index')->name('perfil.show');
+Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 
-Route::get('/plants/create', 'PlantsController@create');
-Route::post('/plants', 'PlantsController@store');
+Route::get('/plants', 'PlantsController@index');
 
-Route::get('/posts/create', 'PostsController@create');
-Route::post('/posts', 'PostsController@store');
+Route::get('/newplant', 'PlantsController@create');
+Route::post('/newplant', 'PlantsController@store')->name('newplant.store');
 
-Route::get('/plants', function () {
-    return view('plants');
- });
+Route::get('/newpost', 'PostsController@create');
+Route::post('/newpost', 'PostsController@store')->name('newpost.store');
+
+
 
 // Rotas antigas
 

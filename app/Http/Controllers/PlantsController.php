@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PlantsController extends Controller
 {
     public function create() {
-        return view('plants/create');
+        return view('newplant');
     }
 
     public function store() {
@@ -22,5 +22,9 @@ class PlantsController extends Controller
         auth()->user()->plants()->create($data);
 
        return request()->all();
+    }
+
+    public function index() {
+        return view('plants');
     }
 }

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@include ('menu-usuario')
+@include ('menu')
 
 <div class="row justify-content-start">
     <div class="tituloPlaceholder">
@@ -10,7 +10,7 @@
 <div class="row listaPlantas">
 
     <!-- CARD NOVA PLANTA -->
-    <a href="plants/create">
+    <a href="newplant">
         <div class="card cardPlanta">
             <img class="card-img-top" src="images/novaplanta.png" alt="Nova planta">
             <div class="card-body">

@@ -1,4 +1,4 @@
-@include ('menu-usuario')
+@include ('menu')
 
 <section id="info-planta">
     <div class="container">

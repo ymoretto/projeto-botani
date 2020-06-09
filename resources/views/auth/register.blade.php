@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@include ('menu-usuario')
+@include ('header')
 
 <section>
     <article class="tituloCadastroBanner bannerCadastroUsuario">
@@ -13,8 +13,8 @@
                 <div class="col-lg-4">
                     <div class="form-group">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="image" name="image">
-                            <label class="custom-file-label" for="image">Uma foto sua</label>
+                        <input type="file" class="custom-file-input" id="image" name="image">
+                            <label class="custom-file-label" for="image">Foto sua</label>
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@
                         <div class="form-group">
                             <label for="description" class="labelsCadastro">Sobre você</label>
                             <textarea class="form-control" name="description" id="description"
-                                rows="2"></textarea>
+                                value="{{ old('user_description') }}" rows="2"></textarea>
                         </div>
 
                         <div class="form-row">
@@ -100,7 +100,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="gender" class="labelsCadastro">Gênero</label>
-                                    <select class="form-control" name="gender" id="gender">
+                                    <select class="form-control" name="gender" id="gender" value="gender">
                                         <option>Feminino</option>
                                         <option>Masculino</option>
                                         <option>Não-binário</option>

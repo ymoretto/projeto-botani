@@ -1,3 +1,0 @@
-<?php
-
-// nada escrito ainda

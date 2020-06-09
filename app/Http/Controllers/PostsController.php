@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Plant;
+use App\User;
 
 class PostsController extends Controller
 {
     public function create() {
-        return view('posts/create');
+        return view('newpost');
     }
 
     public function store() {
@@ -15,11 +17,14 @@ class PostsController extends Controller
         $data = request()->validate([
             'plant_id' => 'required',
             'description' => 'required',
-            'image-post' => ['required', 'image'],
+            'image' => ['required', 'image'],
         ]);
 
-        auth()->user()->posts()->create($data);
+        //código abaixo serve para autenticar o usuário
+        //auth()->plant()->posts()->create($data);
 
-        return request()->all();
+        \App\Post::create($data);
+
+        dd(request()->all());
     }
 }

@@ -1,4 +1,4 @@
-@include ('menu-usuario')
+@include ('menu')
 
 <section class="pageFeed">
     <div class="feedTimelineContainer">

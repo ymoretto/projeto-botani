@@ -1,5 +1,3 @@
-@extends ('functions')
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +13,7 @@
   <link rel="stylesheet" href="{{ asset('css/perfil-usuario-style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/perfil-planta-style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/listaPlantas-style.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/cadastro-style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/cadastros-style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/novo-post-style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/feed-style.css') }}">
   
@@ -41,19 +39,19 @@
         <div class="collapse navbar-collapse nav-text" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="perfil">Meu Perfil</a>
+                <a class="nav-link" href="profile/{{ Auth::user()->id }}">Meu Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="plants">Minhas Plantas</a>
+                <a class="nav-link" href="/plants">Minhas Plantas</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Notificações</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Amigos</a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="feed">Feed</a>
+                <a class="nav-link" href="/feed">Feed</a>
               </li>
 
               @guest

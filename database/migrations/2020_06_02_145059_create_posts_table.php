@@ -15,13 +15,11 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
             $table->foreignId('plant_id')->constrained();
             $table->text('description');
             $table->string('image');
-            $table->timestamps();
+            $table->timestamps(0); //-> tá dando erro quando tento criar post novo
 
-            $table->index('user_id');
             $table->index('plant_id');
         });
     }

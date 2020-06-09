@@ -1,11 +1,11 @@
-@include ('menu-usuario')
+@include ('menu')
 
 <section id="info-usuario">
     <div class="container">
         <div class="row mt-3">
             <div class="col mt-5">
                 <div class="imgUserPlaceholderPerfil">
-                    <img class="img-user" src="images/perfil-botania-planticia.jpg" alt="Foto de Perfil">
+                    <img class="img-user" src="{{ asset('images/perfil-botania-planticia.jpg') }}" alt="Foto de Perfil">
                 </div>
             </div>
 
@@ -16,7 +16,7 @@
                     <li class="list-group-item">Membro desde: {{ $user->created_at }}</li>
                     <li class="list-group-item">1 Planta</li>
                     <li class="list-group-item">
-                        {{ $user->profile->description }}
+                        {{ $user->description }}
                         <!-- <br><span class="badge badge-primary badge-pill">editar</span> -->
                     </li>
 
@@ -25,22 +25,15 @@
                     <strong>Badges</strong>
                     <div class="container">
                         <span>
-                            <img class="accomplishment" src="images/badges/051-ecologism-23.png" alt="primeira planta">
+                            <img class="accomplishment" src="{{ asset('images/badges/051-ecologism-23.png') }}" alt="primeira planta">
                         </span>
                         <!-- not today courona vairus, not today-->
                         <span>
-                            <img class="accomplishment" src="images/badges/051-ecologism-9.png" alt="primeira planta">
+                            <img class="accomplishment" src="{{ asset('images/badges/051-ecologism-9.png') }}" alt="primeira planta">
                         </span>
                         <span>
-                            <img class="accomplishment" src="images/badges/051-ecologism-18.png" alt="primeira planta">
+                            <img class="accomplishment" src="{{ asset('images/badges/051-ecologism-18.png') }}" alt="primeira planta">
                         </span>
-                        <?php  
-                            for ($i=0; $i < 5; $i++) { 
-                                echo "<span>
-                                <img class='accomplishment' src='images/badges/051-ecologism-18.png' alt='primeira planta'>
-                                </span>";
-                            }
-                        ?>
                     </div>
                 </div>
             </div> <!-- close row -->
@@ -54,13 +47,7 @@
         </div>
         <div class="row">
             <div class="plantasEAmigosUsuario">
-                <a href="#"><img class="img-pq" src="images/jiboia.jpeg" alt=""></a>
-
-                <?php 
-                    for ($i=0; $i < 9; $i++) { 
-                        echo "<a href='#'><img class='img-pq' src='images/jiboia.jpeg'></a>";
-                    }
-                ?>
+                <a href="#"><img class="img-pq" src="{{ asset('images/jiboia.jpeg') }}" alt=""></a>
             </div>
         </div>
     </div>
@@ -72,13 +59,7 @@
         </div>
         <div class="row">
             <div class="plantasEAmigosUsuario">
-                <a href="#"><img class="img-pq-amigos" src="images/helo.jpeg" alt="Heloísa Medeiros"></a>
-
-                <?php 
-                    for ($i=0; $i < 9; $i++) { 
-                        echo "<a href='#'><img class='img-pq-amigos' src='images/helo.jpeg' alt='Heloísa Medeiros'></a>";
-                    }
-                ?>
+                <a href="#"><img class="img-pq-amigos" src="{{ asset('images/helo.jpeg') }}" alt="Heloísa Medeiros"></a>
             </div>
         </div>
     </div>
