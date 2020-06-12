@@ -74,7 +74,7 @@
                         <div class="form-group">
                             <label for="email" class="labelsCadastro">E-mail</label>
                             <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror"
-                                value="{{ old('username') }}" required autocomplete="email"
+                                value="{{ old('email') }}" required autocomplete="email"
                                 placeholder="botania.planticia@gmail.com">
 
                                 @error('email')
@@ -87,7 +87,7 @@
                         <div class="form-group">
                             <label for="description" class="labelsCadastro">Sobre você</label>
                             <textarea class="form-control" name="description" id="description"
-                                value="{{ old('user_description') }}" rows="4"></textarea>
+                                value="{{ old('description') }}" rows="4"></textarea>
                         </div>
 
                         <div class="form-row">

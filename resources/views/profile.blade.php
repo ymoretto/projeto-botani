@@ -11,7 +11,7 @@
 
             <div class="col-md-9 basic-info-text">
                 <h2 class="nome-usuario titulo">{{ $user->name }}</h2>
-                <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="/editprofile" role="button">Editar Perfil</a>
+                <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="/profile/{{ $user->id }}/edit" role="button">Editar Perfil</a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Membro desde: {{ $user->created_at }}</li>
                     <li class="list-group-item">Plantas: {{ $id = DB::table('plants')->count() }}</li>
