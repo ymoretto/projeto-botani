@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
+use App\User;
 
 class PlantsController extends Controller
 {
@@ -19,12 +21,35 @@ class PlantsController extends Controller
             'species' => '',
         ]);
 
-        auth()->user()->plants()->create($data);
+        $imagePath = request('image')->store('uploads', 'public');
 
-       return request()->all();
+        $image = Image::make(public_path("/storage/{$imagePath}"))->fit(1200,1200); //esta linha usa uma biblioteca de imagens chamada Intervetion para alterar o tamanho das imagens publicadas
+        $image->save();
+
+
+        auth()->user()->plants()->create([
+            'name' => $data['name'],
+            'description' => $data['description'],
+            'species' => $data['species'],
+            'image' => $imagePath,
+        ]);
+
+       return redirect('/profile/'. auth()->user()->id);
     }
 
-    public function index() {
-        return view('plants');
+    public function index($user){
+        $user = User::findOrFail($user);
+
+        return view('plants', [
+            'user' => $user,
+        ]);
     }
+
+
+    public function show(\App\Plant $plant) 
+    {
+        return view('plantprofile',compact('plant'));
+        // o compact() é a versão curta do array que está no ProfileController
+    }
+
 }

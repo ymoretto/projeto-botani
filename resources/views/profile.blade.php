@@ -10,11 +10,11 @@
             </div>
 
             <div class="col-md-9 basic-info-text">
-                <h2 class="nome-usuario titulo">{{ $user->username }}</h2>
-                <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="#" role="button">Editar Perfil</a>
+                <h2 class="nome-usuario titulo">{{ $user->name }}</h2>
+                <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="/editprofile" role="button">Editar Perfil</a>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Membro desde: {{ $user->created_at }}</li>
-                    <li class="list-group-item">1 Planta</li>
+                    <li class="list-group-item">Plantas: {{ $id = DB::table('plants')->count() }}</li>
                     <li class="list-group-item">
                         {{ $user->description }}
                         <!-- <br><span class="badge badge-primary badge-pill">editar</span> -->
@@ -43,19 +43,26 @@
 <section id="plantas-usuario">
     <div class="container">
         <div class="row">
-            <h2 class="titulo h2-perfil">Plantas de Plantícia</h2>
+            <h2 class="titulo h2-perfil">Plantas de {{ $user->name }}</h2>
         </div>
         <div class="row">
-            <div class="plantasEAmigosUsuario">
+            <!-- <div class="plantasEAmigosUsuario">
                 <a href="#"><img class="img-pq" src="{{ asset('images/jiboia.jpeg') }}" alt=""></a>
-            </div>
+            </div> -->
+
+            @foreach($user->plants as $plant)
+                <div class="plantasEAmigosUsuario">
+                    <a href="/plantprofile/{{ $plant->id }}"><img class="img-pq w-150" src="/storage/{{ $plant->image }}" alt=""></a>
+                </div>
+            @endforeach
+
         </div>
     </div>
 </section>
 <section id="amigos-usuario">
     <div class="container">
         <div class="row">
-            <h2 class="titulo h2-perfil">Amigos de Plantícia</h2>
+            <h2 class="titulo h2-perfil">Amigos de {{ $user->name }}</h2>
         </div>
         <div class="row">
             <div class="plantasEAmigosUsuario">

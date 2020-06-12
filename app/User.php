@@ -38,7 +38,7 @@ class User extends Authenticatable
     ];
 
     public function plants() {
-        return $this->hasMany(Plant::class);
+        return $this->hasMany(Plant::class)->orderBy('created_at', 'DESC');
     }
 
     public function profile() {

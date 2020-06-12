@@ -10,9 +10,9 @@
 <div class="row listaPlantas">
 
     <!-- CARD NOVA PLANTA -->
-    <a href="newplant">
+    <a href="/newplant">
         <div class="card cardPlanta">
-            <img class="card-img-top" src="images/novaplanta.png" alt="Nova planta">
+            <img class="card-img-top" src="{{ asset('images/novaplanta.png') }}" alt="Nova planta">
             <div class="card-body">
                 <p class="card-text text-center">Nova planta</p>
             </div>
@@ -21,32 +21,21 @@
     <!-- CARD NOVA PLANTA-->
 
     <!-- CARD PLANTA -->
-    <a href="perfil-planta.php" target="_blank">
-        <div class="card cardPlanta">
-            <img class="card-img-top" src="images/jiboia.jpeg" alt="Foto da sua planta">
-            <div class="card-body">
-                <p class="card-text text-center">Gertrudes</p>
-            </div>
-        </div>
-    </a>
+    <div class="row">
+
+            @foreach($user->plants as $plants)
+                <a href="#" target="_blank">
+                    <div class="card cardPlanta">
+                        <img class="card-img-top w-100" src="/storage/{{ $plants->image }}" alt="Foto da sua planta">
+                        <div class="card-body">
+                        <p class="card-text text-center">{{ $plants->name }}</p>
+                        </div>
+                    </div>
+                </a>
+            @endforeach
+
+    </div>
     <!-- CARD PLANTA-->
 
-    <!-- SPAWN DE CARDS DE TESTE -->
-    <?php 
-    for ($i=0; $i <= 9 ; $i++) { 
-
-        echo "<a href='perfil-planta.php' target='_blank'>
-        <div class='card cardPlanta'>
-            <img class='card-img-top' src='images/jiboia.jpeg' alt='Foto da sua planta'>
-            <div class='card-body'>
-                <p class='card-text text-center'>Gertrudes</p>
-            </div>
-        </div>
-        </a>";
-
-    }
-?>
-    <!-- SPAWN DE CARDS DE TESTE -->
-</div>
 
 @include ('footer')

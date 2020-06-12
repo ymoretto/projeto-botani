@@ -15,6 +15,11 @@ class ProfilesController extends Controller
             'user' => $user,
         ]);
     }
+
+    public function store() {
+        return view('/editprofile');
+    }
+
 }
 
 //uma outra forma de encontra ro user seria:

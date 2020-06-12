@@ -24,10 +24,14 @@ Route::get('/feed', function () {
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 
-Route::get('/plants', 'PlantsController@index');
+Route::get('/plants/{user}', 'PlantsController@index');
 
 Route::get('/newplant', 'PlantsController@create');
 Route::post('/newplant', 'PlantsController@store')->name('newplant.store');
+
+Route::get('/plantprofile/{plant}', 'PlantsController@show');
+
+Route::get('/posts', 'PostsController@index');
 
 Route::get('/newpost', 'PostsController@create');
 Route::post('/newpost', 'PostsController@store')->name('newpost.store');

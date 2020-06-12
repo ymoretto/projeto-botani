@@ -39,10 +39,10 @@
         <div class="collapse navbar-collapse nav-text" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="profile/{{ Auth::user()->id }}">Meu Perfil</a>
+                <a class="nav-link" href="/profile/{{ Auth::user()->id }}">Meu Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/plants">Minhas Plantas</a>
+                <a class="nav-link" href="/plants/{{ Auth::user()->id }}">Minhas Plantas</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Notificações</a>

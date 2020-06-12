@@ -12,25 +12,10 @@
         <div class="form-group">
             <label for="plant_id">Qual é sua planta?</label>
             <select class="form-control">              
-
-            <?php
-             use App\Plant;
-             $plants = Plant::all();
-            ?>
-
-            @foreach($plants as $p) 
-
-            <option value="{{ old('$p->plant_id') }}"  id="plant_id" name="plant_id">{{ $p->name }}</option>
-        
-            @endforeach
-
+                <option value="{{ old('name') }}"  id="name" name="name"> Cacilda </option>
+                <option value="{{ old('name') }}"  id="name" name="name"> Gertrudes </option>
+                <option value="{{ old('name') }}"  id="name" name="name"> Tostinho </option>
             </select>
-
-            @if ($errors->has('plant_id'))
-                <span class="invalid-feedback" role="alert">
-                <strong>{{ $errors->first('plant_id') }} </strong>
-                </span>
-            @endif
 
  
         <small class="form-text text-muted">Quer adicionar uma nova planta?  <a href='plants/create'>Clique Aqui!</a> </small>
@@ -44,11 +29,6 @@
             <label for="image">Selecione uma foto</label>
             <input type="file" class="form-control-file" id="image" name="image">
 
-            @if ($errors->has('image'))
-                <span class="invalid-feedback" role="alert">
-                <strong>{{ $errors->first('image') }} </strong>
-                </span>
-            @endif
 
         </div>
         <button type="submit" class="btn btn-success">Enviar foto</button>
