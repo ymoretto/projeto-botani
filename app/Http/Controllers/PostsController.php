@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Plant;
 use App\User;
+use App\Posts;
 
 class PostsController extends Controller
 {
@@ -30,7 +31,6 @@ class PostsController extends Controller
 
         \App\Post::create($data);
 
-        dd(request()->all());
     }
 
     public function index() {

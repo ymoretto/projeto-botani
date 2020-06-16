@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Profile;
 
+
 class ProfilesController extends Controller
 {
     public function index($user)

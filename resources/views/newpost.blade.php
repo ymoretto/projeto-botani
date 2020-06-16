@@ -11,10 +11,11 @@
 
         <div class="form-group">
             <label for="plant_id">Qual é sua planta?</label>
-            <select class="form-control">              
-                <option value="{{ old('name') }}"  id="name" name="name"> Cacilda </option>
-                <option value="{{ old('name') }}"  id="name" name="name"> Gertrudes </option>
-                <option value="{{ old('name') }}"  id="name" name="name"> Tostinho </option>
+            <select class="form-control" name="plant_id">
+                <option value="" disabled selected>Selecione sua planta</option>              
+                <option value="1"  id="plant_id"> Cacilda </option>
+                <option value="{{ old('name') }}"  id="name"> Gertrudes </option>
+                <option value="{{ old('name') }}"  id="name"> Tostinho </option>
             </select>
 
  
