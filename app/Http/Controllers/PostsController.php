@@ -7,6 +7,8 @@ use App\Plant;
 use App\User;
 use App\Posts;
 
+// colocar o filtro da imagem da yolanda no controller do post para puxar todas as plantas daquele usuario
+
 class PostsController extends Controller
 {
 
@@ -33,7 +35,8 @@ class PostsController extends Controller
 
     }
 
-    public function index() {
+    public function index($user) {
+        $plants = Plant::where('user_id', $user)->get();
         return view('posts');
     }
 }

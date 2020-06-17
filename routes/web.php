@@ -34,7 +34,7 @@ Route::post('/newplant', 'PlantsController@store')->name('newplant.store');
 
 Route::get('/plantprofile/{plant}', 'PlantsController@show');
 
-Route::get('/posts', 'PostsController@index');
+Route::get('/posts/{user}', 'PostsController@index');
 
 Route::get('/newpost', 'PostsController@create');
 Route::post('/newpost', 'PostsController@store')->name('newpost.store');

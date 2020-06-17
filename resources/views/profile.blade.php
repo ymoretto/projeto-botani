@@ -66,7 +66,7 @@
         </div>
         <div class="row">
             <div class="plantasEAmigosUsuario">
-                <a href="#"><img class="img-pq-amigos" src="{{ asset('images/helo.jpeg') }}" alt="Heloísa Medeiros"></a>
+                <a href="#"><img class="img-pq-amigos" src="{{ asset('images/helo.jpeg') }}" alt="Heloísa Medeiros" style="filter: grayscale(100%)"></a>
             </div>
         </div>
     </div>
