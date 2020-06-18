@@ -16,7 +16,7 @@
                 
             <?php
             use App\Plant;
-            $plants = Plant::all();
+            $plants = DB::table('plants')->where('user_id', $user->id);
             ?>
 
                 @foreach($plants as $p)
