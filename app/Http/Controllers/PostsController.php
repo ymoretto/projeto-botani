@@ -35,8 +35,8 @@ class PostsController extends Controller
 
     }
 
-    public function index($user) {
-        $plants = Plant::where('user_id', $user)->get();
+    public function index() {
+        
         return view('posts');
     }
 }

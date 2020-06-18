@@ -1,5 +1,3 @@
-
-
 @include ('menu')
 
 <div class="row justify-content-start">

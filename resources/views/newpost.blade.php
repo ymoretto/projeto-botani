@@ -13,9 +13,16 @@
             <label for="plant_id">Qual é sua planta?</label>
             <select class="form-control" name="plant_id">
                 <option value="" disabled selected>Selecione sua planta</option>              
-                <option value="1"  id="plant_id"> Cacilda </option>
-                <option value="{{ old('name') }}"  id="name"> Gertrudes </option>
-                <option value="{{ old('name') }}"  id="name"> Tostinho </option>
+                
+            <?php
+            use App\Plant;
+            $plants = Plant::all();
+            ?>
+
+                @foreach($plants as $p)
+                <option value="{{ old('$p->id') }}"  id="plant_id"> {{ $p->name }} </option>
+                @endforeach
+                
             </select>
 
  
