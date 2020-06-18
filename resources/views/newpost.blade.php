@@ -16,11 +16,11 @@
                 
             <?php
             use App\Plant;
-            $plants = DB::table('plants')->where('user_id', 1);
+            $plants = Plant::all();
             ?>
 
                 @foreach($plants as $p)
-                <option value="{{ old('$p->id') }}"  id="plant_id"> {{ $p->id }} </option>
+                <option value="{{ $p->id }}"  id="plant_id"> {{ $p->name }} </option>
                 @endforeach
                 
             </select>

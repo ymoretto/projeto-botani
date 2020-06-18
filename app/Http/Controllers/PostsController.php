@@ -33,10 +33,11 @@ class PostsController extends Controller
 
         \App\Post::create($data);
 
+        return redirect('/profile/'. auth()->user()->id);
+
     }
 
     public function index() {
-        
         return view('posts');
     }
 }
