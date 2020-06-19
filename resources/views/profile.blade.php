@@ -5,7 +5,7 @@
         <div class="row mt-3">
             <div class="col mt-5">
                 <div class="imgUserPlaceholderPerfil">
-                    @if(File::exists($user->profile))
+                    @if($user->profile != null)
                         <img class="img-user" src="/storage/{{ $user->profile->image }}" alt="Foto de Perfil"/>
                     @else
                         <img class="img-user" src="{{ asset('images/default_botani_image.png') }}" alt="Foto de Perfil"/>
