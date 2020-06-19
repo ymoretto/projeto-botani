@@ -5,13 +5,18 @@
         <div class="row mt-3">
             <div class="col mt-5">
                 <div class="imgUserPlaceholderPerfil">
-                    <img class="img-user" src="{{ asset('images/perfil-botania-planticia.jpg') }}" alt="Foto de Perfil">
+                    <img class="img-user" src="{{ $user->profile->image ?? asset('images/default_botani_image.png') }}" alt="Foto de Perfil">
                 </div>
+                <div class="btnCadastroPlaceholder"><a href="/editimage/{{ $user->id }}"><button class="btn btnCadastro">Mudar imagem</button></a></div>
             </div>
 
             <div class="col-md-9 basic-info-text">
                 <h2 class="nome-usuario titulo">{{ $user->name }}</h2>
-                <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="/profile/{{ $user->id }}/edit" role="button">Editar Perfil</a>
+                
+                @can('update', $user->profile)
+                    <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="/profile/{{ $user->id }}/edit" role="button">Editar Perfil</a>
+                @endcan
+
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Membro desde: {{ date( 'd/m/Y' , strtotime($user->created_at))}}</li>
                     <li class="list-group-item">Plantas: {{ $plants = DB::table('plants')->where('user_id', $user->id)->count()}}</li>

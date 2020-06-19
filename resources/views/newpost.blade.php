@@ -16,7 +16,11 @@
                 
             <?php
             use App\Plant;
-            $plants = Plant::all();
+            use App\User;
+
+            $user = Auth::user();
+            $plants = Plant::where('user_id', Auth::user()->id)->get();
+
             ?>
 
                 @foreach($plants as $p)

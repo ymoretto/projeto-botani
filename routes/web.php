@@ -25,7 +25,8 @@ Route::get('/feed', function () {
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit'); //este mostra o Form para o usuário fazer a edição
 Route::patch('/profile/{user}', 'ProfilesController@update')->name('profile.update'); //este é a rota que os arquivos vão fazer para serem postados
-
+Route::get('/editimage/{user}', 'ProfilesController@viewImage');
+Route::post('/editimage/{user}', 'ProfilesController@editImage');
 
 Route::get('/plants/{user}', 'PlantsController@index');
 
