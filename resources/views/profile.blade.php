@@ -5,7 +5,12 @@
         <div class="row mt-3">
             <div class="col mt-5">
                 <div class="imgUserPlaceholderPerfil">
-                    <img class="img-user" src="{{ $user->profile->image ?? asset('images/default_botani_image.png') }}" alt="Foto de Perfil">
+                    
+                    @if(exists("/storage/{{ $user->profile->image }}"))
+                        <img class="img-user" src="/storage/{{ $user->profile->image }}" alt="Foto de Perfil"/>
+                    @else
+                        <img class="img-user" src="{{ asset('images/default_botani_image.png') }}" alt="Foto de Perfil"/>
+                    @endif
                 </div>
                 <div class="btnCadastroPlaceholder"><a href="/editimage/{{ $user->id }}"><button class="btn btnCadastro">Mudar imagem</button></a></div>
             </div>
