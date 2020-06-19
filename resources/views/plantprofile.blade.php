@@ -18,10 +18,9 @@
                   <li>{{ $plant->species }}</li>
                   <li> {{ date( 'd/m/Y' , strtotime($plant->created_at))}}</li>
                   <li>Planta de {{ $plant->user->name }}</li>
-                  <li>Algo do tipo</li>
                 </ul>
-                <a name="editarPlanta" id="editarPlanta" class="btnEditarPlanta" href="#" role="button">Editar Planta</a>
-                <a name="excluirPlanta" id="excluirPlanta" class="btnExcluirPlanta" href="#" role="button">Excluir Planta</a>
+                <!-- <a name="editarPlanta" id="editarPlanta" class="btnEditarPlanta" href="#" role="button">Editar Planta</a>
+                <a name="excluirPlanta" id="excluirPlanta" class="btnExcluirPlanta" href="#" role="button">Excluir Planta</a> -->
             </div> <!-- close plant col -->
 
         </div> <!-- close row -->
@@ -39,7 +38,7 @@
                 <a href="#"><img class="img-pq" src="images/jiboia.jpeg" alt=""></a>
                 
                 @foreach($plant->posts as $p)
-                        <a href='#'><img class='img-pq' src="{{ $p->image }}"></a>
+                        <a href='#'><img class='img-pq' src="/storage/{{ $p->plant->image }}"></a>
                 @endforeach
             </div>
         </div>

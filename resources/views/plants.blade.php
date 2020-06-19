@@ -21,12 +21,12 @@
     <!-- CARD PLANTA -->
     <div class="row">
 
-            @foreach($user->plants as $plants)
-                <a href="#" target="_blank">
+            @foreach($user->plants as $p)
+                <a href="/plantprofile/{{ $p->id }}" target="">
                     <div class="card cardPlanta">
-                        <img class="card-img-top w-100" src="/storage/{{ $plants->image }}" alt="Foto da sua planta">
+                        <img class="card-img-top w-100" src="/storage/{{ $p->image }}" alt="Foto da sua planta">
                         <div class="card-body">
-                        <p class="card-text text-center">{{ $plants->name }}</p>
+                        <p class="card-text text-center">{{ $p->name }}</p>
                         </div>
                     </div>
                 </a>
