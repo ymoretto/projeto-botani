@@ -28,7 +28,6 @@ class ProfilesController extends Controller
 
     public function edit(\App\User $user) //forma rápida de encontrar o user
     {
-        $this->authorize('update', $user->profile);
         
         return view('editprofile', compact('user'));
     }
@@ -36,9 +35,7 @@ class ProfilesController extends Controller
 
     public function update(User $user)
     {
-
-        $this->authorize('update', $user->profile);
-        
+   
         $data = request()->validate([
             'name' => 'required',
             'description' => 'required',
@@ -66,7 +63,7 @@ class ProfilesController extends Controller
         if (request('image')) {
             $imagePath = request('image')->store('uploads', 'public');
 
-            $image = Image::make(public_path("storage/{$imagePath}"))->fit(1000, 1000);
+            $image = Image::make(public_path("/storage/{$imagePath}"))->fit(1000, 1000);
             $image->save();
 
             $imageArray = ['image' => $imagePath];

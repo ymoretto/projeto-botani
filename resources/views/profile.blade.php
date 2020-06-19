@@ -12,11 +12,7 @@
 
             <div class="col-md-9 basic-info-text">
                 <h2 class="nome-usuario titulo">{{ $user->name }}</h2>
-                
-                @can('update', $user->profile)
                     <a name="editarPerfil" id="editarPerfil" class="btnEditarPerfil" href="/profile/{{ $user->id }}/edit" role="button">Editar Perfil</a>
-                @endcan
-
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Membro desde: {{ date( 'd/m/Y' , strtotime($user->created_at))}}</li>
                     <li class="list-group-item">Plantas: {{ $plants = DB::table('plants')->where('user_id', $user->id)->count()}}</li>

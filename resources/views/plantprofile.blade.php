@@ -16,7 +16,7 @@
                 <p> {{ $plant->description }}</p>
                 <ul>
                   <li>{{ $plant->species }}</li>
-                  <li> {{ $plant->created_at }}</li>
+                  <li> {{ date( 'd/m/Y' , strtotime($plant->created_at))}}</li>
                   <li>Planta de {{ $plant->user->name }}</li>
                   <li>Algo do tipo</li>
                 </ul>
@@ -38,11 +38,9 @@
             <div class="timelinePlanta">
                 <a href="#"><img class="img-pq" src="images/jiboia.jpeg" alt=""></a>
                 
-                <?php 
-                    for ($i=0; $i < 9; $i++) { 
-                        echo "<a href='#'><img class='img-pq' src='images/jiboia.jpeg'></a>";
-                    }
-                ?>
+                @foreach($plant->posts as $p)
+                        <a href='#'><img class='img-pq' src="{{ $p->image }}"></a>
+                @endforeach
             </div>
         </div>
     </div>
